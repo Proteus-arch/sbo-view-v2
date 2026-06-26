@@ -444,7 +444,7 @@ useEffect(() => {
               }
               return (
                 <div className={`mb-4 flex items-center gap-3 p-4 rounded-xl border ${cls}`}>
-                  <TrendingUp size={16} className={yoy ? (yoy > 0 ? "text-red-400" : yoy < 0 ? "text-emerald-400" : "text-gray-400") : "text-gray-400"} />
+                  <TrendingUp size={16} className={yoy && yoy > 0 ? "text-red-400" : yoy && yoy < 0 ? "text-emerald-400" : "text-gray-400"} />
                   <span className="text-sm font-medium">{sentence}</span>
                 </div>
               );
