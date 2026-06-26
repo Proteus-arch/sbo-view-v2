@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 import { Search, Check, Loader2 } from 'lucide-react';
 
-export default function BenchmarkSearch({ onSelectBenchmark }) {
+export default function BenchmarkSearch({ onSelectBenchmark }: { onSelectBenchmark: (benchmark: any) => void }) {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
-  const [selected, setSelected] = useState(null);
+  const [results, setResults] = useState<any[]>([]);
+  const [selected, setSelected] = useState<any>(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function BenchmarkSearch({ onSelectBenchmark }) {
     return () => clearTimeout(timer);
   }, [query]);
 
-  const handleSelect = (match) => {
+  const handleSelect = (match: any) => {
     setSelected(match);
     onSelectBenchmark(match);
     setResults([]);
