@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when operating margin is above industry benchmark",
+  "focus": "Sustain OpEx efficiency, reinvest in process improvement, benchmark general & administrative allocation, and prevent administrative bloat",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "OM-A01",
+   "title": "OpEx Efficiency Benchmarking",
+   "description": "Compare Selling, General & Admin (SG&A), rent, utilities, and admin costs as a % of revenue against top-quartile peers. Lock in efficiency gains through standardized operating playbooks.",
+   "effort": "Medium",
+   "impact_days": 14,
+   "category": "Overhead Optimization",
+   "audit_trail": "OpEx benchmark report + efficiency playbook log"
+  },
+  {
+   "id": "OM-A02",
+   "title": "Strategic Automation Scaling",
+   "description": "Deploy surplus operating income into workflow automation, ERP upgrades, or AI admin tools. Track labor-hour savings and error-rate reduction quarterly.",
+   "effort": "High",
+   "impact_days": 30,
+   "category": "Process Improvement",
+   "audit_trail": "Automation Return on Investment (ROI) tracker + labor hour savings report"
+  },
+  {
+   "id": "OM-A03",
+   "title": "Fixed-to-Variable Cost Conversion",
+   "description": "Shift non-core functions to outsourced or usage-based models. Maintain operating leverage flexibility to protect margin during revenue dips.",
+   "effort": "Medium",
+   "impact_days": 21,
+   "category": "Cost Structure",
+   "audit_trail": "Vendor transition log + fixed/variable cost ratio sheet"
+  },
+  {
+   "id": "OM-A04",
+   "title": "Overhead Allocation Review",
+   "description": "Audit departmental general & administrative assignments. Ensure indirect costs are accurately traced to revenue-generating units. Eliminate cross-subsidization.",
+   "effort": "Medium",
+   "impact_days": 10,
+   "category": "Financial Control",
+   "audit_trail": "Overhead allocation matrix + departmental P&L review"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-A01", "title": "Predictive Maintenance & Uptime Investment", "description": "Fund sensors connected to the internet or CMMS software to prevent unplanned downtime. Track OEE improvement and maintenance cost % vs revenue.", "effort": "Medium", "impact_days": 21, "category": "Operational Excellence", "audit_trail": "Maintenance tech deployment log + OEE improvement report" },
+    { "id": "31-A02", "title": "Lean Overhead Allocation", "description": "Assign indirect labor and facility costs directly to product lines. Identify and eliminate non-value-added administrative layers.", "effort": "High", "impact_days": 18, "category": "Cost Accounting", "audit_trail": "Activity-based costing sheet + org structure review" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-A01", "title": "Store-Level OpEx Optimization", "description": "Benchmark payroll, utilities, and shrink by location. Reallocate marketing spend to highest-Return on Investment (ROI) stores and standardize low-performer protocols.", "effort": "Medium", "impact_days": 14, "category": "Store Operations", "audit_trail": "Store OpEx dashboard + marketing Return on Investment (ROI) tracker" },
+    { "id": "44-A02", "title": "Centralized Selling, General & Admin (SG&A) Efficiency", "description": "Consolidate corporate functions (HR, finance, IT) into shared service centers. Track cost-per-employee and processing time improvements.", "effort": "High", "impact_days": 25, "category": "Corporate Efficiency", "audit_trail": "Shared service transition log + cost-per-employee report" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-A01", "title": "Utilization-Driven Overhead Absorption", "description": "Align non-billable support costs to billable hour volume. Cap admin hiring until utilization exceeds 75% threshold.", "effort": "Low", "impact_days": 7, "category": "Labor Efficiency", "audit_trail": "Utilization dashboard + headcount approval log" },
+    { "id": "54-A02", "title": "Remote/Hybrid Space Optimization", "description": "Downsize office footprint or shift to flexible leases. Redirect savings into technology or talent retention programs.", "effort": "Medium", "impact_days": 21, "category": "Real Estate", "audit_trail": "Lease amendment log + occupancy cost report" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-A01", "title": "Labor Scheduling Optimization", "description": "Implement AI-driven shift scheduling aligned to forecasted demand. Track the cost of labor vs revenue and overtime variance.", "effort": "Medium", "impact_days": 14, "category": "Workforce Management", "audit_trail": "Schedule optimization report + labor cost tracker" },
+    { "id": "72-A02", "title": "Energy & Utility Efficiency Audit", "description": "Install smart thermostats, LED lighting, and energy-efficient HVAC. Monitor utility cost per occupied room or cover turn.", "effort": "Low", "impact_days": 10, "category": "Facility Management", "audit_trail": "Utility bill audit + savings realization log" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-A01", "title": "Project Overhead Allocation Review", "description": "Cap general conditions costs at % of contract value. Track superintendent span-of-control and project admin ratios.", "effort": "Medium", "impact_days": 10, "category": "Project Control", "audit_trail": "Overhead allocation sheet + job cost variance report" },
+    { "id": "23-A02", "title": "Equipment Utilization Tracking", "description": "Monitor owned vs rented equipment hours. Sell underutilized assets and lease high-demand tools to reduce carrying costs.", "effort": "Medium", "impact_days": 18, "category": "Asset Management", "audit_trail": "Equipment utilization log + lease vs buy analysis" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-A01", "title": "Shift Scheduling & Overtime Control", "description": "Align production shifts to confirmed orders. Cap overtime at 5% of payroll. Track idle oven time and labor cost per batch.", "effort": "Low", "impact_days": 7, "category": "Workforce Management", "audit_trail": "Shift schedule log + overtime variance report" },
+    { "id": "3118-A02", "title": "Energy-Efficient Oven Cycling", "description": "Optimize bake cycles to reduce idle heating time. Install heat recovery systems and track utility cost per unit produced.", "effort": "Medium", "impact_days": 14, "category": "Facility Efficiency", "audit_trail": "Energy audit report + utility cost tracker" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-A01", "title": "Service Department Labor Efficiency", "description": "Track technician efficiency and productivity. Optimize bay utilization and reduce non-billable shop time.", "effort": "Medium", "impact_days": 14, "category": "Labor Efficiency", "audit_trail": "Tech efficiency dashboard + bay utilization report" },
+    { "id": "4411-A02", "title": "Fixed Salary vs Commission Review", "description": "Audit sales and admin compensation structures. Shift toward performance-based pay to align OpEx with revenue cycles.", "effort": "High", "impact_days": 21, "category": "Compensation", "audit_trail": "Comp structure analysis + performance pay rollout log" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-A01", "title": "Cloud & Subscription Cost Optimization", "description": "Audit Software-as-a-Service (SaaS), cloud, and dev tool subscriptions. Eliminate unused licenses and shift to reserved/spot instances where viable.", "effort": "Low", "impact_days": 7, "category": "Tech Overhead", "audit_trail": "Subscription audit log + cloud cost optimization report" },
+    { "id": "5415-A02", "title": "Meeting & Admin Time Reduction", "description": "Implement async communication norms and meeting caps. Track developer/admin hour ratio and redirect saved time to billable work.", "effort": "Medium", "impact_days": 10, "category": "Process Efficiency", "audit_trail": "Meeting audit report + utilization uplift tracker" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-A01", "title": "Labor Cost % Control & Cross-Training", "description": "Cap labor at 28-30% of sales. Cross-train staff for host/expo/runner roles to optimize headcount during slow periods.", "effort": "Low", "impact_days": 7, "category": "Workforce Management", "audit_trail": "Labor cost report + cross-training completion log" },
+    { "id": "7225-A02", "title": "Utility & Waste Reduction Audit", "description": "Install low-flow fixtures and energy-efficient HVAC. Track waste hauler fees and implement composting/recycling to lower disposal costs.", "effort": "Medium", "impact_days": 14, "category": "Facility Efficiency", "audit_trail": "Utility audit sheet + waste cost tracker" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-A01", "title": "Job Site Overhead Allocation", "description": "Cap super/admin costs per project. Track trailer, temp utilities, and site supervision expenses vs contract value.", "effort": "Medium", "impact_days": 10, "category": "Project Control", "audit_trail": "Site general & administrative log + job cost variance report" },
+    { "id": "2361-A02", "title": "Superintendent Span of Control", "description": "Optimize superintendent-to-project ratios. Use technology for remote progress tracking to reduce field admin general & administrative.", "effort": "High", "impact_days": 21, "category": "Labor Efficiency", "audit_trail": "Span of control analysis + tech adoption report" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-A01", "title": "Staff Scheduling Optimization", "description": "Align payroll hours to foot traffic patterns. Use predictive scheduling to reduce idle time and overtime costs.", "effort": "Low", "impact_days": 7, "category": "Workforce Management", "audit_trail": "Schedule optimization report + labor cost tracker" },
+    { "id": "4561-A02", "title": "Marketing Spend Return on Investment (ROI) Audit", "description": "Track CAC and ROAS by channel. Eliminate low-performing campaigns and redirect budget to highest-margin product lines.", "effort": "Medium", "impact_days": 14, "category": "Marketing Efficiency", "audit_trail": "Channel Return on Investment (ROI) dashboard + budget reallocation log" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-A01", "title": "Practice Management Automation", "description": "Deploy workflow automation for recurring compliance tasks. Track billable vs admin hour ratio and reduce manual review time.", "effort": "Medium", "impact_days": 21, "category": "Process Efficiency", "audit_trail": "Automation deployment log + utilization report" },
+    { "id": "5412-A02", "title": "Non-Billable Overhead Caps", "description": "Limit marketing, training, and admin hours to % of revenue. Require partner approval for non-client-facing initiatives.", "effort": "Low", "impact_days": 7, "category": "Overhead Control", "audit_trail": "Overhead approval log + non-billable hour tracker" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-A01", "title": "Departmental Expense Benchmarking", "description": "Track housekeeping, Food & Beverage (F&B), and admin costs per occupied room. Implement zero-based budgeting for non-revenue departments.", "effort": "Medium", "impact_days": 14, "category": "Departmental Control", "audit_trail": "Dept expense report + zero-based budget sheet" },
+    { "id": "7211-A02", "title": "Dynamic Staffing & Cross-Training", "description": "Align staffing to occupancy forecasts. Cross-train front desk/concierge/bell staff to optimize the cost of labor during low-demand periods.", "effort": "Medium", "impact_days": 10, "category": "Workforce Management", "audit_trail": "Occupancy vs staffing report + cross-training log" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

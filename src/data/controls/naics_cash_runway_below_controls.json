@@ -1,0 +1,151 @@
+{
+ "metadata": {
+ "description": "Checks and balances triggered when cash runway is below industry benchmark",
+ "focus": "Accelerate cash conversion, extend payables, reduce working capital bloat, and secure short-term spendable cash",
+ "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "CR-B01",
+   "title": "Receivables Collection Push",
+   "description": "Flag invoices more than 30 days overdue. Implement automated collection, early-pay discounts, or factoring for critical cash gaps.",
+   "effort": "Low",
+   "impact_days": 5,
+   "category": "Cash Acceleration",
+   "audit_trail": "long-term unpaid sales invoices report + collection activity log"
+  },
+  {
+   "id": "CR-B02",
+   "title": "Payables Term Negotiation",
+   "description": "Extend vendor terms from net-30 to net-45/60 where possible. Prioritize non-critical suppliers for term extensions.",
+   "effort": "Medium",
+   "impact_days": 10,
+   "category": "Working Capital",
+   "audit_trail": "Vendor term amendment log + cash flow impact sheet"
+  },
+  {
+   "id": "CR-B03",
+   "title": "Inventory Liquidation & Right-Sizing",
+   "description": "Discount slow-moving stock. Halt purchase orders for non-essential items. Align par levels to how many dollars your team generates in revenue, every single day, over a 30-day period.",
+   "effort": "Medium",
+   "impact_days": 12,
+   "category": "Inventory Management",
+   "audit_trail": "Clearance margin report + purchase order (PO) freeze log"
+  },
+  {
+   "id": "CR-B04",
+   "title": "Credit Line Utilization Review",
+   "description": "Draw on undrawn revolver if below safety threshold. Negotiate covenant headroom or temporary limit increases.",
+   "effort": "High",
+   "impact_days": 7,
+   "category": "Liquidity Management",
+   "audit_trail": "Revolver draw request + covenant compliance memo"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-B01", "title": "JIT Alignment & Raw Material Consignment", "description": "Shift critical inputs to billing where another business holds your products, and you pay them after the product sells (consignment billing). Pay only upon consumption to preserve cash and reduce balance sheet bloat.", "effort": "Medium", "impact_days": 14, "category": "Supply Chain Finance", "audit_trail": "Consignment agreement + consumption billing log" },
+    { "id": "31-B02", "title": "Overtime & Shift Rationalization", "description": "Pause discretionary overtime. Align production schedules to firm orders only. Track labor cost per unit vs. baseline.", "effort": "Low", "impact_days": 7, "category": "Labor Efficiency", "audit_trail": "Overtime freeze log + labor cost tracker" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-B01", "title": "Dropship & Consignment Shift", "description": "Convert slow-turn categories to vendor dropship or allowing other businesses to hold your products, and you pay them after the product sells (consignment to hold inventory) from balance sheet and free cash.", "effort": "Medium", "impact_days": 18, "category": "Assortment Finance", "audit_trail": "Dropship vendor list + inventory removal report" },
+    { "id": "44-B02", "title": "Markdown Authority Restriction", "description": "Limit manager discount approvals. Require corporate sign-off for  more than 15% markdowns to protect gross margin during cash crunch.", "effort": "Low", "impact_days": 5, "category": "Pricing Control", "audit_trail": "Markdown approval log + margin protection report" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-B01", "title": "Milestone Billing Enforcement", "description": "Require upfront deposits for new engagements. Tie 30% billing to project kickoff rather than completion to accelerate cash inflow.", "effort": "Low", "impact_days": 5, "category": "Billing Policy", "audit_trail": "Contract amendment tracker + deposit collection log" },
+    { "id": "54-B02", "title": "Non-Billable Work Freeze", "description": "Halt internal Research & Development (R&D), training, or admin projects. Redirect all staff hours to client-facing billable work until runway normalizes.", "effort": "Low", "impact_days": 3, "category": "Utilization Control", "audit_trail": "Project freeze memo + billable utilization report" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-B01", "title": "Menu Engineering for Cash Velocity", "description": "Promote high-turn, low-prep items during cash-constrained periods. Pause labor-intensive specialty dishes to reduce cost of sales and labor drag.", "effort": "Low", "impact_days": 5, "category": "Operational Finance", "audit_trail": "Menu promo log + prep time tracker" },
+    { "id": "72-B02", "title": "Vendor Net Terms & Consignment Push", "description": "Negotiate 60-day terms with food/beverage distributors. Shift non-perishables to business who will hold your products, and you pay them after the product sells (consignment) feasible to delay cash outflow.", "effort": "Medium", "impact_days": 10, "category": "Payables Management", "audit_trail": "Vendor term sheet + log that keeps track of businesses who hold your products, and you pay them after the product sells (consignment agreement log)" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-B01", "title": "Progress Billing Acceleration", "description": "Submit draw requests immediately upon milestone completion. Chase AIA G702/G703 progress billing  approvals aggressively to compress payment cycles.", "effort": "Medium", "impact_days": 7, "category": "Cash Acceleration", "audit_trail": "Draw request log + approval tracking sheet" },
+    { "id": "23-B02", "title": "Subcontractor Pay Term Extension", "description": "Negotiate pay-when-paid clauses or extend sub terms to net-45. Prioritize cash flow to critical path trades only.", "effort": "High", "impact_days": 14, "category": "Payables Management", "audit_trail": "Subcontractor amendment log + cash flow projection" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-B01", "title": "Flour & Input Consignment Shift", "description": "Move grain/flour purchases to vendor-managed inventory or billing where another business holds your products, and you pay them after the product sells (consignment billing). Pay only upon batch consumption to preserve cash.", "effort": "Medium", "impact_days": 10, "category": "Supply Chain Finance", "audit_trail": "Consignment agreement + consumption billing log" },
+    { "id": "3118-B02", "title": "Daily Batch & Par Level Compression", "description": "Tighten daily production caps based on confirmed orders. Halt speculative baking and reduce par levels to 3-day sales velocity.", "effort": "Low", "impact_days": 5, "category": "Inventory Control", "audit_trail": "Production cap sheet + waste variance log" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-B01", "title": "Floorplan Utilization Audit", "description": "Identify aged inventory ( more than 60 days) and aggressively discount or auction to reduce floorplan interest. Track days-to-turn weekly.", "effort": "Low", "impact_days": 7, "category": "Inventory Finance", "audit_trail": "Aged inventory report + discount authorization log" },
+    { "id": "4411-B02", "title": "Finance & Insurance (F&I) Product Pre-Sell & Cash Upfront", "description": "Push extended warranty, Guaranteed Asset Protection (GAP), or maintenance packages with upfront payment incentives. Capture cash immediately vs. backend financing.", "effort": "Low", "impact_days": 5, "category": "Cash Acceleration", "audit_trail": "Finance & Insurance (F&I) prepay log + penetration rate tracker" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-B01", "title": "Cloud Cost Right-Sizing & Pause", "description": "Test unused development/test environments. Switch to spot instances or pause non-critical workloads. Track monthly cloud spend reduction.", "effort": "Low", "impact_days": 7, "category": "Direct Cost Control", "audit_trail": "Cloud utilization report + cost optimization log" },
+    { "id": "5415-B02", "title": "Milestone Billing & Deposit Enforcement", "description": "Require 30-50% upfront deposits for new projects. Tie billing to sprint completion rather than final delivery to accelerate inflows.", "effort": "Medium", "impact_days": 5, "category": "Billing Policy", "audit_trail": "Contract amendment tracker + deposit collection log" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-B01", "title": "Prep Waste & Inventory Par Alignment", "description": "Track prep-to-waste ratio daily. Adjust par levels based on daypart demand. Implement First-In-First-Out (FIFO) strictly to know which products you sold and how much those products cost and log spoilage by category.", "effort": "Low", "impact_days": 5, "category": "Food Cost Control", "audit_trail": "Prep waste tracker + par level adjustment log" },
+    { "id": "7225-B02", "title": "Vendor Net-45 & Consignment Push", "description": "Negotiate extended terms with food/beverage distributors. Shift non-perishables to businesses who hold your products, and you pay them after the product sells (consignment) cash outflow without stockouts.", "effort": "Medium", "impact_days": 10, "category": "Payables Management", "audit_trail": "Vendor term sheet + log that keeps track of businesses who hold your products, and you pay them after the product sells (consignment agreement log)" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-B01", "title": "Draw Request Acceleration", "description": "Submit progress billing immediately upon milestone completion. Chase lender/architect approvals aggressively to compress payment cycles.", "effort": "Medium", "impact_days": 7, "category": "Cash Acceleration", "audit_trail": "Draw request log + approval tracking sheet" },
+    { "id": "2361-B02", "title": "Material Consignment & Pay-When-Paid", "description": "Shift lumber, drywall, or fixtures to billing where another business holds your products, and you pay them after the product sells (consignment billing). Negotiate pay-when-paid terms with subcontractors to align outflows with inflows.", "effort": "High", "impact_days": 14, "category": "Supply Chain Finance", "audit_trail": "Consignment agreement + subcontractor amendment log" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-B01", "title": "Slow-Turn SKU Liquidation", "description": "Discount or bundle low-velocity health/beauty items. Halt reorders until inventory turns align with how many dollars your team generates in revenue, every single day, over a 30-day period.", "effort": "Low", "impact_days": 7, "category": "Inventory Management", "audit_trail": "Clearance margin report + purchase order (PO) freeze log" },
+    { "id": "4561-B02", "title": "Gift Card & Membership Pre-Sell", "description": "Launch aggressive prepaid packages or loyalty memberships. Convert excess inventory liability into immediate cash inflow.", "effort": "Low", "impact_days": 5, "category": "Cash Generation", "audit_trail": "Prepaid sales dashboard + membership contract log" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-B01", "title": "Subscription Billing Transition", "description": "Migrate project clients to monthly compliance retainers billed in advance. Stabilize cash flow and reduce unpaid sales exposure.", "effort": "Medium", "impact_days": 14, "category": "Revenue Model Shift", "audit_trail": "Client migration tracker + recurring revenue report" },
+    { "id": "5412-B02", "title": "Non-Billable Admin Freeze", "description": "Halt internal marketing, training, or software trials. Redirect all staff hours to client-facing billable work until runway normalizes.", "effort": "Low", "impact_days": 3, "category": "Utilization Control", "audit_trail": "Project freeze memo + billable utilization report" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-B01", "title": "Advance Booking & Corporate Retainer Push", "description": "Offer 10-15% discount for prepaid stays or corporate block bookings. Convert future occupancy liability into immediate cash.", "effort": "Low", "impact_days": 7, "category": "Cash Generation", "audit_trail": "Prepaid booking log + corporate contract tracker" },
+    { "id": "7211-B02", "title": "Utility & Vendor Term Extension", "description": "Negotiate net-45 terms with linen, Food & Beverage (F&B), or maintenance suppliers. Align payables with occupancy-driven revenue cycles.", "effort": "Medium", "impact_days": 10, "category": "Payables Management", "audit_trail": "Vendor term amendment log + cash flow impact sheet" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

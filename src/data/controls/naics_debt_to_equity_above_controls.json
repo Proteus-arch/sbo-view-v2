@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when debt-to-equity ratio is above industry benchmark",
+  "focus": "Deleverage, covenant compliance, interest coverage improvement, and balance sheet repair",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "DE-A01",
+   "title": "Debt Restructuring & Refinancing",
+   "description": "Evaluate extending maturities, consolidating high-rate debt, or negotiating rate reductions with existing lenders to reduce debt service pressure.",
+   "effort": "High",
+   "impact_days": 21,
+   "category": "Capital Structure",
+   "audit_trail": "Refinance term sheet + interest rate comparison"
+  },
+  {
+   "id": "DE-A02",
+   "title": "Asset Monetization & Sale-Leaseback",
+   "description": "Identify non-core real estate, equipment, or intellectual property (patents, copyright, and trademarks - IP) for sale or sale-leaseback to generate immediate cash for principal reduction.",
+   "effort": "High",
+   "impact_days": 30,
+   "category": "Balance Sheet Repair",
+   "audit_trail": "Asset valuation report + sale-leaseback agreement"
+  },
+  {
+   "id": "DE-A03",
+   "title": "Earnings Retention Policy",
+   "description": "Temporarily suspend dividends or bonuses. Mandate 70%+ of net income be applied to principal reduction until target total debts compared to company's value is met.",
+   "effort": "Low",
+   "impact_days": 5,
+   "category": "Profit Allocation",
+   "audit_trail": "Board resolution + principal repayment ledger"
+  },
+  {
+   "id": "DE-A04",
+   "title": "Covenant Compliance Dashboard",
+   "description": "Monitor interest coverage, fixed charge coverage, and leverage covenants weekly. Trigger early remediation if headroom is less than 15%.",
+   "effort": "Low",
+   "impact_days": 3,
+   "category": "Risk Monitoring",
+   "audit_trail": "Covenant tracking sheet + compliance certification"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-A01", "title": "Lease vs Buy Analysis & Capex Deferral", "description": "Shift new equipment acquisitions to operating leases. Pause non-essential capex until total debts compared to company's value normalizes.", "effort": "Medium", "impact_days": 10, "category": "Capital Planning", "audit_trail": "Lease analysis matrix + capex freeze log" },
+    { "id": "31-A02", "title": "Inventory Liquidation for Debt Paydown", "description": "Aggressively discount slow-moving finished goods. Direct 100% of proceeds to revolving credit reduction.", "effort": "Medium", "impact_days": 14, "category": "Working Capital", "audit_trail": "Liquidation margin report + debt reduction tracker" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-A01", "title": "Underperforming Store Portfolio Optimization", "description": "Close or renegotiate leases for bottom 15% of locations by money left after running the business. Redirect freed capital to debt reduction.", "effort": "High", "impact_days": 25, "category": "Real Estate Finance", "audit_trail": "Store closure P&L + lease termination docs" },
+    { "id": "44-A02", "title": "Vendor Consignment Shift", "description": "Convert inventory financing to vendor business who will hold your products, and you pay them after the product sells (consignment) possible to remove payables from balance sheet.", "effort": "Medium", "impact_days": 18, "category": "Supply Chain Finance", "audit_trail": "Consignment agreements + AP reduction log" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-A01", "title": "Partner Capital Calls & Profit Retention", "description": "Request additional partner contributions of cash or property to the company's value. Lock distributions until leverage targets are achieved.", "effort": "Medium", "impact_days": 14, "category": "Equity Management", "audit_trail": "Capital call notices + distribution hold memo" },
+    { "id": "54-A02", "title": "Overhead Reduction & Space Optimization", "description": "Sublease unused office space or switch to hybrid models to reduce fixed lease obligations.", "effort": "Medium", "impact_days": 21, "category": "Opex Reduction", "audit_trail": "Lease sublet agreement + occupancy cost report" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-A01", "title": "Franchise Fee Restructuring & a real estate investment trust (REIT) Prep", "description": "Negotiate royalty deferrals with franchisors. Evaluate spinning real estate into a separate holding entity.", "effort": "High", "impact_days": 21, "category": "Structural Finance", "audit_trail": "Franchise amendment + a real estate investment trust (REIT) feasibility study" },
+    { "id": "72-A02", "title": "Menu Margin & Labor Efficiency Push", "description": "Optimize menu for highest money earned. Reduce labor hours through cross-training to boost money left after running the business for paying off debts.", "effort": "Medium", "impact_days": 14, "category": "Operational Efficiency", "audit_trail": "Menu engineering matrix + labor cost report" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-A01", "title": "Bonding & Guarantee Fee Audit", "description": "Review all active bonds and guarantees. Negotiate lower fees or release bonds on completed milestones to free capital.", "effort": "Medium", "impact_days": 10, "category": "Risk Management", "audit_trail": "Bond release log + fee negotiation sheet" },
+    { "id": "23-A02", "title": "Equipment Sale-Leaseback", "description": "Sell owned heavy machinery and lease it back to convert fixed assets into cash for debt reduction.", "effort": "High", "impact_days": 30, "category": "Asset Liquidity", "audit_trail": "Equipment sale contract + leaseback agreement" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-A01", "title": "Oven & Mixer Sale-Leaseback", "description": "Sell owned ovens or dough mixers to specialty finance firms and lease them back to unlock cash for debt reduction.", "effort": "High", "impact_days": 21, "category": "Asset Liquidity", "audit_trail": "Equipment valuation + sale-leaseback contract" },
+    { "id": "3118-A02", "title": "Cash-Payment Supplier Discounting", "description": "Negotiate 2-5% discounts for immediate cash payment on flour/sugar. Redirect savings to principal paydown.", "effort": "Medium", "impact_days": 7, "category": "Cost Management", "audit_trail": "Discount realization log + debt allocation sheet" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-A01", "title": "Floorplan Limit Reduction", "description": "Request a reduction in floorplan credit limits to lower interest expense and comparisons of debt to other financial accounts.", "effort": "Low", "impact_days": 5, "category": "Credit Management", "audit_trail": "Floorplan amendment + interest savings tracker" },
+    { "id": "4411-A02", "title": "Aged Inventory Liquidation", "description": "Auction units over 90 days old to reduce carrying costs and free up floorplan capacity.", "effort": "Low", "impact_days": 7, "category": "Inventory Finance", "audit_trail": "Auction results + floorplan release log" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-A01", "title": "Cloud Cost Right-Sizing for money left after running the business", "description": "Aggressively audit and reduce cloud spend. Apply savings directly to debt service to improve comparisons of debt to other financial accounts.", "effort": "Low", "impact_days": 7, "category": "Opex Control", "audit_trail": "Cloud audit report + money left after running the business uplift log" },
+    { "id": "5415-A02", "title": "Deferred Compensation & Bonus Hold", "description": "Pause executive bonuses and deferred compensation payouts. Redirect to debt reduction until the company's financial health is more stable.", "effort": "Medium", "impact_days": 5, "category": "Compensation", "audit_trail": "Comp hold memo + debt allocation ledger" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-A01", "title": "Franchise Royalty Deferral Negotiation", "description": "Negotiate with franchisor to defer royalty payments during distress period to preserve cash for paying off debts.", "effort": "High", "impact_days": 14, "category": "Vendor Finance", "audit_trail": "Franchise amendment + cash flow projection" },
+    { "id": "7225-A02", "title": "Ghost Kitchen Sublease", "description": "Sublease excess kitchen space to delivery-only brands to generate rental income for debt paydown.", "effort": "Medium", "impact_days": 21, "category": "Revenue Diversification", "audit_trail": "Sublease agreement + rental income log" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-A01", "title": "Equipment Sale-Leaseback", "description": "Sell heavy equipment and lease back to turn other resources to cash for debt reduction.", "effort": "High", "impact_days": 30, "category": "Asset Liquidity", "audit_trail": "Sale contract + leaseback docs" },
+    { "id": "2361-A02", "title": "Subcontractor Pay Term Extension", "description": "Negotiate extended payment terms with subcontractors to delay cash outflows and improve the comparison of cash and other resources to be used with 12 months to debts to be paid within 12 months.", "effort": "Medium", "impact_days": 10, "category": "Payables Management", "audit_trail": "Term amendment log + cash flow impact" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-A01", "title": "Store Consolidation & Lease Renegotiation", "description": "Close underperforming locations and negotiate rent reductions to improve money left after running the business for paying off debts.", "effort": "High", "impact_days": 25, "category": "Real Estate", "audit_trail": "Closure P&L + rent reduction agreement" },
+    { "id": "4561-A02", "title": "Inventory Consignment Shift", "description": "Shift high-cost inventory to billing where another business holds your products, and you pay them after the product sells (consignment billing) to reduce payables and comparisons of debt to other financial accounts.", "effort": "Medium", "impact_days": 18, "category": "Supply Chain", "audit_trail": "Consignment log + AP reduction report" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-A01", "title": "Partner Equity Injection", "description": "Request additional capital contributions from partners to boost the company's value.", "effort": "Medium", "impact_days": 14, "category": "Equity Management", "audit_trail": "Capital call notices + equity ledger" },
+    { "id": "5412-A02", "title": "Distribution Suspension", "description": "Suspend partner distributions until total debts compared to company's value ratio falls below industry benchmark.", "effort": "Low", "impact_days": 5, "category": "Profit Allocation", "audit_trail": "Distribution hold memo + cash retention log" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-A01", "title": "Property Sale-Leaseback", "description": "Sell hotel property to a real estate investment trust (REIT) and lease back to unlock significant cash for debt reduction.", "effort": "High", "impact_days": 45, "category": "Asset Liquidity", "audit_trail": "Sale agreement + leaseback docs" },
+    { "id": "7211-A02", "title": "FF&E Liquidation", "description": "Sell unused furniture, fixtures, and equipment to generate cash for debt paydown.", "effort": "Medium", "impact_days": 14, "category": "Asset Management", "audit_trail": "Liquidation report + debt allocation" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

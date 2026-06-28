@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when money less cost of sales compared to money from sales is above the industry average",
+  "focus": "Optimize idle working capital, improve capital efficiency, strategically deploy excess spendable cash, and reduce financing costs",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "CR-A01",
+   "title": "Working Capital Redeployment",
+   "description": "Identify excess cash tied in low-yield accounts. Redirect to short-term investments, vendor early-pay discounts, or strategic inventory prebuys to improve how efficiently you generate money less cost of sales.",
+   "effort": "Low",
+   "impact_days": 7,
+   "category": "Capital Allocation",
+   "audit_trail": "Cash deployment ledger + Return on Investment (ROI) tracking sheet"
+  },
+  {
+   "id": "CR-A02",
+   "title": "Short-Term Debt Prepayment",
+   "description": "Review revolving credit and short-term notes. Prepay high-interest balances to reduce interest expense and improve money left after running the business compared to money from sales without compromising spendable cash.",
+   "effort": "Low",
+   "impact_days": 5,
+   "category": "Debt Management",
+   "audit_trail": "Prepayment authorization log + interest savings report"
+  },
+  {
+   "id": "CR-A03",
+   "title": "Dynamic Dividend & Buyback Policy",
+   "description": "If excess spendable cash persists, evaluate shareholder returns. Implement rule-based buyback triggers or supplemental dividends to return capital efficiently.",
+   "effort": "Medium",
+   "impact_days": 14,
+   "category": "Capital Structure",
+   "audit_trail": "Board approval minutes + capital return tracker"
+  },
+  {
+   "id": "CR-A04",
+   "title": "Excess Cash Yield Optimization",
+   "description": "Benchmark idle cash yields against U.S. Treasury bills, money markets, or short-term commercial paper. Switch to higher-yield, low-risk instruments.",
+   "effort": "Low",
+   "impact_days": 3,
+   "category": "Treasury Management",
+   "audit_trail": "Yield comparison report + investment mandate update"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-A01", "title": "Strategic Equipment Pre-Purchase", "description": "Lock in next-gen machinery or automation during low-demand cycles. Use excess cash to avoid future financing costs and capture vendor early-pay discounts.", "effort": "Medium", "impact_days": 21, "category": "Capex Optimization", "audit_trail": "Equipment procurement ledger + depreciation schedule" },
+    { "id": "31-A02", "title": "Raw Material Forward-Buying", "description": "Purchase bulk commodities (metals, resins, grains) during price dips. Store properly and track commodity index vs. actual cost of sales to validate savings.", "effort": "Medium", "impact_days": 14, "category": "Supply Chain Finance", "audit_trail": "Commodity purchase log + cost of sales variance report" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-A01", "title": "Vendor Early-Pay Discount Capture", "description": "Leverage excess spendable cash to take 2% discount if paid within 10 days and a due date of 30 days discounts. Calculate annualized yield vs cost of capital and prioritize top volume suppliers.", "effort": "Low", "impact_days": 5, "category": "Procurement Finance", "audit_trail": "Discount capture ledger + AP aging analysis" },
+    { "id": "44-A02", "title": "Store Experience & Tech Upgrades", "description": "Fund Point-of-Sale (POS) modernization, self-checkout, or loyalty infrastructure to drive future throughput and differentiate from e-commerce competitors.", "effort": "High", "impact_days": 21, "category": "Capex Optimization", "audit_trail": "Tech procurement ledger + throughput impact report" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-A01", "title": "Retainer Acceleration & Prepay Incentives", "description": "Offer 3-5% discount for annual retainer prepayments. Convert project-based billing to upfront retainers to compound cash advantage.", "effort": "Low", "impact_days": 7, "category": "Cash Flow Timing", "audit_trail": "Prepay offer log + cash conversion tracker" },
+    { "id": "54-A02", "title": "Talent Upskilling & Certification Fund", "description": "Allocate surplus to high-Return on Investment (ROI) training, certifications, or AI tooling. Track billable rate uplift and utilization gains post-investment.", "effort": "Medium", "impact_days": 14, "category": "Human Capital", "audit_trail": "Training completion log + utilization dashboard" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-A01", "title": "Property Tech & Experience Upgrades", "description": "Deploy excess spendable cash into reservation systems, self-ordering kiosks, or guest experience tech to drive future throughput.", "effort": "High", "impact_days": 21, "category": "Capex Optimization", "audit_trail": "Tech procurement ledger + throughput impact report" },
+    { "id": "72-A02", "title": "Advance Booking Incentives", "description": "Push prepaid packages, gift cards, or corporate retainers. Negotiate favorable terms with distributors to lock in lower input costs.", "effort": "Low", "impact_days": 7, "category": "Cash Generation", "audit_trail": "Prepaid sales dashboard + vendor term sheet" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-A01", "title": "Bonding Capacity & Pre-Qualification Expansion", "description": "Use strong spendable cash to secure higher bonding limits or pre-qualify for larger municipal/commercial bids that require cash reserves.", "effort": "Medium", "impact_days": 14, "category": "Growth Enablement", "audit_trail": "Bonding agreement + bid qualification docs" },
+    { "id": "23-A02", "title": "Equipment Fleet Expansion", "description": "Purchase high-utilization machinery outright to eliminate lease payments and reduce long-term project general & administrative.", "effort": "High", "impact_days": 18, "category": "Asset Acquisition", "audit_trail": "Equipment purchase ledger + utilization tracker" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-A01", "title": "Flour & Input Forward-Buying", "description": "Lock in grain/flour prices during low cycles. Track commodity index vs. actual cost of sales weekly and validate savings against storage costs.", "effort": "Medium", "impact_days": 14, "category": "Cost Management", "audit_trail": "Commodity hedge log + cost of sales vs index report" },
+    { "id": "3118-A02", "title": "Oven & Automation Pre-Purchase", "description": "Fund next-gen ovens or automated dough dividers during slow periods. Avoid future financing drag and capture vendor installation discounts.", "effort": "High", "impact_days": 21, "category": "Capex Optimization", "audit_trail": "Equipment procurement ledger + Return on Investment (ROI) schedule" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-A01", "title": "Floorplan Interest Prepayment", "description": "Pay down high-interest floorplan notes early to reduce carrying costs. Reinvest savings into high-turn inventory or Finance & Insurance (F&I) marketing.", "effort": "Low", "impact_days": 5, "category": "Debt Management", "audit_trail": "Floorplan payoff log + interest savings report" },
+    { "id": "4411-A02", "title": "Service Bay Expansion Funding", "description": "Finance additional lift bays or diagnostic tooling to capture overflow service revenue. Track absorption rate improvement post-install.", "effort": "Medium", "impact_days": 18, "category": "Revenue Diversification", "audit_trail": "Service expansion ledger + absorption tracker" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-A01", "title": "Cloud Reserved Instance Prepay", "description": "Convert on-demand cloud spend to 1-3 year reserved instances. Capture 30-40% cost reduction and track margin lift on delivery projects.", "effort": "Low", "impact_days": 7, "category": "Direct Cost Control", "audit_trail": "Reserved instance purchase log + cloud cost optimization report" },
+    { "id": "5415-A02", "title": "Intellectual Property (IP) Productization & Software-as-a-Service (SaaS) Tooling", "description": "Allocate surplus to package theories and plans into templates, courses, or Software-as-a-Service (SaaS) tools. Track recurring revenue shift and delivery cost reduction.", "effort": "Medium", "impact_days": 30, "category": "Business Model Evolution", "audit_trail": "IP product roadmap + recurring revenue tracker" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-A01", "title": "Kitchen Tech & Efficiency Upgrades", "description": "Invest in Kitchen Display Systems (KDS systems), automated prep tools, or energy-efficient equipment to reduce labor dependency and improve ticket times.", "effort": "Medium", "impact_days": 14, "category": "Operational Efficiency", "audit_trail": "Tech procurement log + ticket time tracker" },
+    { "id": "7225-A02", "title": "Gift Card & Catering Pre-Sell Campaign", "description": "Launch aggressive prepaid packages or corporate catering retainers. Convert excess spendable cash into predictable future revenue streams.", "effort": "Low", "impact_days": 7, "category": "Cash Generation", "audit_trail": "Prepaid sales dashboard + catering contract log" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-A01", "title": "Material Bulk Buy & Storage Lock", "description": "Pre-purchase lumber, drywall, or fixtures during seasonal dips. Negotiate storage agreements with suppliers to defer delivery without price hikes.", "effort": "Medium", "impact_days": 14, "category": "Supply Chain Finance", "audit_trail": "Bulk purchase log + storage agreement tracker" },
+    { "id": "2361-A02", "title": "Subcontractor Early-Pay Discounts", "description": "Offer 2% discount for trade partners accepting payment within 10 days. Strengthen relationships and secure priority scheduling on rush jobs.", "effort": "Low", "impact_days": 7, "category": "Procurement Finance", "audit_trail": "Discount offer log + subcontractor priority schedule" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-A01", "title": "Consultative Service Expansion", "description": "Add high-price services (skin analysis, wellness consultations) to drive basket size and differentiate from e-commerce competitors.", "effort": "Medium", "impact_days": 14, "category": "Service Diversification", "audit_trail": "Service the percentage of customers who buy an additional product or service along with a main purchase (attachment rate) + consultation revenue log" },
+    { "id": "4561-A02", "title": "Loyalty Program & Tech Funding", "description": "Redirect surplus into tiered loyalty programs or mobile app development. Track retention vs. acquisition cost quarterly.", "effort": "Medium", "impact_days": 21, "category": "Customer Retention", "audit_trail": "Loyalty program Return on Investment (ROI) + CX investment tracker" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-A01", "title": "Advisory Service Tier Launch", "description": "Package financial insights, cash flow forecasting, or compliance advisory as premium retainers. Track conversion from compliance-only clients.", "effort": "Medium", "impact_days": 21, "category": "Service Evolution", "audit_trail": "Advisory package rollout + client upgrade tracker" },
+    { "id": "5412-A02", "title": "Practice Management Automation", "description": "Fund workflow automation, client portals, or AI document review. Measure utilization gains and staff capacity uplift post-deployment.", "effort": "Medium", "impact_days": 14, "category": "Tech Automation", "audit_trail": "Software deployment log + utilization dashboard" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-A01", "title": "Dynamic Yield & Ancillary Revenue Optimization", "description": "Implement AI-driven pricing and upsell premium add-ons (early check-in, experiences, Food & Beverage (F&B)). Track Revenue Per Available Room (RevPAR) and supplemental margin lift.", "effort": "Medium", "impact_days": 14, "category": "Revenue Management", "audit_trail": "Yield pricing dashboard + supplemental revenue report" },
+    { "id": "7211-A02", "title": "Property Renovation & Experience Upgrade", "description": "Fund room refreshes, lobby redesign, or sustainability certifications to command premium Average Daily Rate (ADR). Track repeat visit frequency and Online Travel Agency (OTA) rating lift.", "effort": "High", "impact_days": 30, "category": "Brand Positioning", "audit_trail": "Renovation ledger + Average Daily Rate (ADR)/occupancy impact report" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

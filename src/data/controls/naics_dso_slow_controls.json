@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "description": "Checks and balances triggered when days to get paid after a sale is above industry benchmark",
+    "focus": "Accelerate collections, tighten credit risk, eliminate billing bottlenecks, prevent bad debt",
+    "last_updated": "2026-05-25"
+  },
+  "universal_controls": [
+    {
+      "id": "DSO-S01",
+      "title": "Daily unpaid sales reports & Escalation Protocol",
+      "description": "Automate daily aging reports. Trigger tiered actions: Day 31 (email), Day 45 (call + payment link), Day 60 (hold new orders), Day 90 (collections agency/legal).",
+      "effort": "Low",
+      "impact_days": 5,
+      "category": "Cash Acceleration",
+      "audit_trail": "Escalation log + action timestamp tracker"
+    },
+    {
+      "id": "DSO-S02",
+      "title": "Credit Policy Audit & Customer Vetting",
+      "description": "Review all active customers. Downgrade or place on Cash-on-Delivery (COD) any account more than 45 days past due. Require financials or trade references for new credit approvals.",
+      "effort": "Medium",
+      "impact_days": 10,
+      "category": "Risk Mitigation",
+      "audit_trail": "Credit approval matrix + customer risk scorecard"
+    },
+    {
+      "id": "DSO-S03",
+      "title": "Billing Accuracy & Dispute Triage",
+      "description": "Audit last 30 invoices for pricing errors, missing purchase orders, or wrong addresses. Resolve disputes within 48 hours to prevent artificial inflation of the number of days it takes to get paid after a sale.",
+      "effort": "Medium",
+      "impact_days": 7,
+      "category": "Process Correction",
+      "audit_trail": "Billing error log + dispute resolution tracker"
+    },
+    {
+      "id": "DSO-S04",
+      "title": "Automated Collection & Payment Portal Deployment",
+      "description": "Implement automated reminder sequences + self-serve payment portal. Track click-to-pay conversion rate weekly.",
+      "effort": "Low",
+      "impact_days": 3,
+      "category": "Technology Enablement",
+      "audit_trail": "Collection campaign report + portal adoption metrics"
+    }
+  ],
+  "sector_controls": {
+    "23": {
+      "sector": "Construction",
+      "controls": [
+        { "id": "23-S01", "title": "Progress Billing Enforcement", "description": "Submit draw requests within 24 hours of milestone completion. Track unbilled work daily. Follow up on retainage release schedules.", "effort": "Low", "impact_days": 5, "category": "Cash Acceleration", "audit_trail": "Draw request log + retainage tracker" },
+        { "id": "23-S02", "title": "Subcontractor Payment Alignment", "description": "Implement pay-when-paid clauses where legal. Never release sub payments before client receipt. Require lien waivers upfront.", "effort": "Medium", "impact_days": 10, "category": "Cash Flow Protection", "audit_trail": "Sub payment schedule + lien waiver repository" }
+      ]
+    },
+    "42": {
+      "sector": "Wholesale Trade",
+      "controls": [
+        { "id": "42-S01", "title": "Stop-Ship & Cash-on-Delivery (COD) Conversion Protocol", "description": "Automatically flag accounts more than 30 days past due for order holds. Require cash-on-delivery or credit card pre-auth until balance drops below threshold.", "effort": "Low", "impact_days": 3, "category": "Risk Mitigation", "audit_trail": "Order hold log + Cash-on-Delivery (COD) conversion tracker" }
+      ]
+    },
+    "62": {
+      "sector": "Healthcare",
+      "controls": [
+        { "id": "62-S01", "title": "Insurance Pre-Authorization & Eligibility Gate", "description": "Verify coverage and obtain auth before service. Track denial reasons daily. Appeal within 7 days. Implement patient point-of-service collection for deductibles.", "effort": "Medium", "impact_days": 12, "category": "Revenue Cycle", "audit_trail": "Eligibility verification log + denial appeal tracker" },
+        { "id": "62-S02", "title": "Patient Payment Plan Automation", "description": "Offer structured 3-6 month payment plans at checkout. Auto-debit reduces administrative days to get paid after a sale drag.", "effort": "Low", "impact_days": 5, "category": "Cash Acceleration", "audit_trail": "Payment plan agreements + auto-debit success rate" }
+      ]
+    },
+    "54": {
+      "sector": "Professional Services",
+      "controls": [
+        { "id": "54-S01", "title": "WIP-to-Invoice Cycle Compression", "description": "Bill weekly instead of monthly. Require client purchase orders before work begins. Track unbilled hours daily and enforce 5-day invoicing SLA.", "effort": "Low", "impact_days": 5, "category": "Process Correction", "audit_trail": "WIP aging report + invoicing SLA compliance log" }
+      ]
+    }
+  },
+  "naics_4digit_overrides": {
+    "2362": {
+      "title": "Nonresidential Building Construction",
+      "controls": [
+        { "id": "2362-S01", "title": "Change Order Pre-Approval Gate", "description": "No out-of-scope work without signed change order + deposit. Prevents unbilled scope creep that inflates days to get paid after a sale.", "effort": "Low", "impact_days": 4, "category": "Risk Mitigation", "audit_trail": "Change order log + deposit receipt tracker" }
+      ]
+    },
+    "4411": {
+      "title": "Automobile Dealers",
+      "controls": [
+        { "id": "4411-S01", "title": "Floorplan & Receivables Reconciliation", "description": "Daily match of sold units to lender payoffs. Flag delayed title/insurance docs that hold up receivable conversion.", "effort": "Medium", "impact_days": 6, "category": "Cash Acceleration", "audit_trail": "Daily payoff reconciliation log + title delay report" }
+      ]
+    },
+    "5415": {
+      "title": "Computer Systems Design",
+      "controls": [
+        { "id": "5415-S01", "title": "Milestone Billing & Acceptance Sign-Off", "description": "Enforce client acceptance signatures before next phase billing. Track unbilled Work-In-Progress (WIP) daily. Escalate stalled sign-offs within 72 hours.", "effort": "Low", "impact_days": 5, "category": "Process Correction", "audit_trail": "WIP aging report + client sign-off tracker" }
+      ]
+    }
+  },
+  "complete_naics_index": {
+    "2361": "23", "2362": "23", "2371": "23", "2373": "23", "2381": "23", "2382": "23",
+    "4231": "42", "4233": "42", "4234": "42", "4238": "42", "4241": "42", "4244": "42",
+    "4411": "44", "4412": "44", "4413": "44", "4441": "44", "4451": "45", "4481": "45",
+    "5411": "54", "5412": "54", "5413": "54", "5415": "54", "5416": "54",
+    "6211": "62", "6212": "62", "6213": "62", "6214": "62", "6215": "62", "6216": "62",
+    "7211": "72", "7225": "72"
+  }
+}

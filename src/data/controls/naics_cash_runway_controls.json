@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "description": "CPA-reviewed internal controls triggered when cash runway falls below industry benchmark",
+    "curated_by": "Small Business Cash Preservation Framework",
+    "last_updated": "2026-05-25",
+    "coverage": "All 4-digit NAICS codes via sector inheritance + explicit overrides"
+  },
+  "universal_cash_preservation": [
+    {
+      "id": "U01",
+      "title": "Weekly Cash Flow Variance Review",
+      "description": "Compare actual inflows/outflows to forecast. Flag variances more than 10%, document root cause, and adjust next week's disbursements.",
+      "effort": "Low",
+      "cash_impact_days": 5,
+      "audit_trail": "Variance log + CFO/owner sign-off"
+    },
+    {
+      "id": "U02",
+      "title": "Paying Vendor Bills over Time",
+      "description": "Categorize payables: Critical (keep operations running) vs Deferrable. Negotiate extended terms or partial payments on deferrable vendors.",
+      "effort": "Medium",
+      "cash_impact_days": 10,
+      "audit_trail": "Payment priority matrix + vendor communication log"
+    },
+    {
+      "id": "U03",
+      "title": "Increase How Quickly You Get Paid",
+      "description": "Daily aging review. Apply contractual late fees, offer 2% early payment discounts, and escalate balances more than 30 days to collections.",
+      "effort": "Low",
+      "cash_impact_days": 7,
+      "audit_trail": "long-term unpaid sales invoices report + collection activity log"
+    }
+  ],
+  "sector_controls": {
+    "11": {
+      "sector": "Agriculture, Forestry, Fishing & Hunting",
+      "controls": [
+        { "id": "11-01", "title": "Crop/Livestock Insurance Verification", "description": "Confirm coverage is active. File weather/market loss claims immediately. Track claim status weekly.", "effort": "Low", "cash_impact_days": 10, "audit_trail": "Policy docs + claim submission records" },
+        { "id": "11-02", "title": "Equipment Lease Deferral", "description": "Shift capital purchases to short-term rentals or cooperative sharing. Renegotiate lease payment schedules during low cash periods.", "effort": "Medium", "cash_impact_days": 21, "audit_trail": "CapEx deferral log + rental agreements" }
+      ]
+    },
+    "21": {
+      "sector": "Mining, Quarrying, & Oil/Gas Extraction",
+      "controls": [
+        { "id": "21-01", "title": "Royalty & Severance Tax Timing", "description": "Align tax payments with production cash cycles. Request payment plans if allowed by state. Track accruals vs cash paid.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Tax accrual schedule + state correspondence" },
+        { "id": "21-02", "title": "Supply Contract Renegotiation", "description": "Switch to just-in-time delivery for drilling/mining supplies. Consolidate vendors for volume discounts.", "effort": "Medium", "cash_impact_days": 18, "audit_trail": "Vendor contract amendments + purchase order (PO) tracker" }
+      ]
+    },
+    "22": {
+      "sector": "Utilities",
+      "controls": [
+        { "id": "22-01", "title": "Regulatory Rate Case Monitoring", "description": "Track approved rate adjustments. Accelerate billing cycles for commercial accounts during cash shortfalls.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Rate case docket + billing cycle report" },
+        { "id": "22-02", "title": "Infrastructure CapEx Deferral", "description": "Postpone non-safety-critical maintenance. Document deferrals for regulatory compliance reviews.", "effort": "High", "cash_impact_days": 30, "audit_trail": "CapEx deferral register + safety compliance log" }
+      ]
+    },
+    "23": {
+      "sector": "Construction",
+      "controls": [
+        { "id": "23-01", "title": "Progress Billing Acceleration", "description": "Submit draw requests within 24 hours of milestone completion. Track retainage separately and follow up weekly.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "Draw request log + client acknowledgment" },
+        { "id": "23-02", "title": "Subcontractor Payment Alignment", "description": "Align sub payments with client receipts. Require lien waivers before release. Use pay-when-paid clauses where legal.", "effort": "Medium", "cash_impact_days": 12, "audit_trail": "Sub payment schedule + lien waiver tracker" }
+      ]
+    },
+    "31": {
+      "sector": "Manufacturing (Food, Textile, Wood, Paper, Chemical, Plastics, Rubber, Nonmetallic)",
+      "controls": [
+        { "id": "31-01", "title": "Inventory Reduction Protocol", "description": "Implement JIT ordering for slow-movers. Liquidate obsolete stock via secondary markets or vendor returns.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Inventory aging report + liquidation receipts" },
+        { "id": "31-02", "title": "Scrap & Rework Tracking", "description": "Monitor scrap rates daily. Investigate more than 2% variance. Adjust machine settings or supplier quality controls.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Scrap log + corrective action reports" }
+      ]
+    },
+    "32": {
+      "sector": "Manufacturing (Chemical, Plastics, Rubber, Nonmetallic Minerals)",
+      "controls": [
+        { "id": "32-01", "title": "Raw Material Hedging Review", "description": "Lock in prices for volatile inputs. Switch to alternative suppliers with due date of 60 days terms during cash constraints.", "effort": "High", "cash_impact_days": 21, "audit_trail": "Hedging contracts + supplier term agreements" },
+        { "id": "32-02", "title": "Batch Size Optimization", "description": "Reduce batch sizes to free up working capital tied in Work-In-Progress (WIP). Track changeover costs vs cash benefit.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Batch size log + Work-In-Progress (WIP) valuation report" }
+      ]
+    },
+    "33": {
+      "sector": "Manufacturing (Metal, Machinery, Computer, Electrical, Transportation, Furniture, Medical, Misc)",
+      "controls": [
+        { "id": "33-01", "title": "Tooling & Equipment Lease Review", "description": "Lease instead of buy new tooling. Sell idle equipment. Track depreciation vs cash recovery.", "effort": "Medium", "cash_impact_days": 18, "audit_trail": "Equipment disposition log + lease agreements" },
+        { "id": "33-02", "title": "WIP Billing Acceleration", "description": "Bill on milestone completion rather than delivery. Require customer purchase orders before production starts.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "WIP aging report + customer purchase order (PO) tracker" }
+      ]
+    },
+    "42": {
+      "sector": "Wholesale Trade",
+      "controls": [
+        { "id": "42-01", "title": "Inventory Turnover Acceleration", "description": "Run targeted business-to-business (B2B) promotions on slow-moving SKUs. Negotiate terms to let another business hold your products, and you pay them after the product sells (consignment terms) with suppliers.", "effort": "Medium", "cash_impact_days": 12, "audit_trail": "Promotion Return on Investment (ROI) report + agreements to let another business hold your products, and you pay them after the product sells (consignment)" },
+        { "id": "42-02", "title": "Customer Credit Limit Review", "description": "Tighten credit terms for accounts more than 45 days. Require Cash-on-Delivery (COD) for new orders until balance drops below threshold.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "Credit limit change log + Cash-on-Delivery (COD) policy" }
+      ]
+    },
+    "44": {
+      "sector": "Retail Trade (Motor Vehicle, Building, Food, Clothing, Electronics, etc.)",
+      "controls": [
+        { "id": "44-01", "title": "Markdown Optimization", "description": "Use dynamic pricing for slow inventory. Bundle slow/fast movers. Track sell-through weekly.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Pricing change log + sell-through report" },
+        { "id": "44-02", "title": "Shrinkage Control Audit", "description": "Conduct surprise cycle counts. Review CCTV for high-theft SKUs. Implement receipt verification at exits.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Cycle count sheets + shrinkage variance report" }
+      ]
+    },
+    "45": {
+      "sector": "Retail Trade (General Merchandise, Health, Gas, Florist, Office, Used, Misc)",
+      "controls": [
+        { "id": "45-01", "title": "Seasonal Inventory Liquidation", "description": "Clear out-of-season stock at 30-50% discount. Use flash sales or wholesale liquidators. Track recovery rate.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Liquidation log + recovery report" },
+        { "id": "45-02", "title": "Vendor Return Program", "description": "Maximize return windows for slow-moving goods. Negotiate stock rotation agreements with distributors.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Return authorization log + distributor agreements" }
+      ]
+    },
+    "48": {
+      "sector": "Transportation & Warehousing (Air, Rail, Water, Truck, Transit, Pipeline, Scenic, Support)",
+      "controls": [
+        { "id": "48-01", "title": "Fuel Surcharge Optimization", "description": "Adjust fuel surcharges monthly based on index. Pre-negotiate fuel card terms during cash shortfalls.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Fuel index tracker + surcharge policy" },
+        { "id": "48-02", "title": "Route & Load Consolidation", "description": "Eliminate empty miles. Combine LTL shipments. Track fuel cost per revenue mile weekly.", "effort": "Medium", "cash_impact_days": 12, "audit_trail": "Route efficiency report + load board logs" }
+      ]
+    },
+    "49": {
+      "sector": "Postal Service, Couriers, Messengers, Warehousing & Storage",
+      "controls": [
+        { "id": "49-01", "title": "Volume-Based Carrier Negotiation", "description": "Consolidate shipments with preferred carriers for volume discounts. Renegotiate rates quarterly.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Carrier contract log + volume discount report" },
+        { "id": "49-02", "title": "Space Utilization Audit", "description": "Sublease unused warehouse space. Implement density tracking. Charge accessorial fees for slow-moving client inventory.", "effort": "Medium", "cash_impact_days": 18, "audit_trail": "Space utilization report + sublease agreements" }
+      ]
+    },
+    "51": {
+      "sector": "Information (Publishing, Broadcasting, Telecom, Computing, Data, Web, Libraries)",
+      "controls": [
+        { "id": "51-01", "title": "Subscription Churn Reduction", "description": "Offer annual prepay discounts. Implement collection management for failed payments. Track MRR weekly.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "Churn report + collection log" },
+        { "id": "51-02", "title": "Cloud Cost Optimization", "description": "Audit unused cloud resources. Switch to reserved instances. Track spend vs budget weekly.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Cloud spend report + optimization log" }
+      ]
+    },
+    "52": {
+      "sector": "Finance & Insurance",
+      "controls": [
+        { "id": "52-01", "title": "Liquidity Buffer Maintenance", "description": "Maintain minimum regulatory spendable cash ratios. Pre-arrange revolving credit lines before cash shortfalls hit.", "effort": "High", "cash_impact_days": 14, "audit_trail": "Liquidity ratio report + credit line agreements" },
+        { "id": "52-02", "title": "Claims/Loan Loss Provision Review", "description": "Accelerate collections on delinquent accounts. Adjust reserves based on actual loss experience, not just models.", "effort": "Medium", "cash_impact_days": 12, "audit_trail": "Collection activity log + reserve adjustment memo" }
+      ]
+    },
+    "53": {
+      "sector": "Real Estate & Rental/Leasing",
+      "controls": [
+        { "id": "53-01", "title": "Rent Collection Acceleration", "description": "Implement auto-pay mandates. Offer small discounts for early payment. Evict/replace non-paying tenants quickly.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Rent roll + collection notices" },
+        { "id": "53-02", "title": "Vacancy Reduction Protocol", "description": "Offer move-in specials. Partner with local employers for corporate housing. Track days vacant vs market avg.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Vacancy log + marketing spend report" }
+      ]
+    },
+    "54": {
+      "sector": "Professional, Scientific & Technical Services",
+      "controls": [
+        { "id": "54-01", "title": "WIP Billing Acceleration", "description": "Bill weekly instead of monthly. Require client purchase orders before work begins. Track unbilled hours daily.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "WIP aging report + client purchase order (PO) tracker" },
+        { "id": "54-02", "title": "Scope Creep Control", "description": "Document all change requests. Require written approval + additional deposit before out-of-scope work.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Change order log + client sign-offs" }
+      ]
+    },
+    "55": {
+      "sector": "Management of Companies & Enterprises",
+      "controls": [
+        { "id": "55-01", "title": "Intercompany Cash Sweeping", "description": "Implement daily cash concentration. Pool subsidiary balances to offset deficits. Track sweep transactions.", "effort": "Medium", "cash_impact_days": 3, "audit_trail": "Cash sweep log + intercompany agreements" },
+        { "id": "55-02", "title": "Overhead Allocation Review", "description": "Reduce corporate allocations to struggling subsidiaries. Reallocate resources to cash-positive units.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Allocation memo + unit P&L reports" }
+      ]
+    },
+    "56": {
+      "sector": "Administrative, Support, Waste Management & Remediation",
+      "controls": [
+        { "id": "56-01", "title": "Labor Scheduling Optimization", "description": "Align staffing to contract volumes. Cross-train staff to avoid overtime. Track labor cost per contract.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Schedule vs actual report + overtime log" },
+        { "id": "56-02", "title": "Contract Margin Review", "description": "Renegotiate low-price contracts. Exit unprofitable accounts. Track money earned per client.", "effort": "High", "cash_impact_days": 21, "audit_trail": "Contract profitability report + termination notices" }
+      ]
+    },
+    "61": {
+      "sector": "Educational Services",
+      "controls": [
+        { "id": "61-01", "title": "Tuition Prepayment Incentives", "description": "Offer 5% discount for semester prepayment. Implement payment plans with auto-debit. Track enrollment cash flow.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Prepayment log + payment plan agreements" },
+        { "id": "61-02", "title": "Grant & Aid Disbursement Tracking", "description": "Accelerate federal/state grant submissions. Track disbursement timelines. Follow up on delayed payments.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Grant submission log + disbursement tracker" }
+      ]
+    },
+    "62": {
+      "sector": "Health Care & Social Assistance",
+      "controls": [
+        { "id": "62-01", "title": "Insurance Verification & Pre-Authorization", "description": "Verify coverage before service. Track denied claims daily. Appeal within 7 days of denial.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Verification log + appeal tracker" },
+        { "id": "62-02", "title": "Supply Cost Optimization", "description": "Standardize to GPO contracts. Track usage vs patient volume. Substitute generics where clinically appropriate.", "effort": "Medium", "cash_impact_days": 21, "audit_trail": "Supply usage report + GPO compliance log" }
+      ]
+    },
+    "71": {
+      "sector": "Arts, Entertainment & Recreation",
+      "controls": [
+        { "id": "71-01", "title": "Advance Ticket Sales Push", "description": "Offer early-bird discounts. Sell season passes. Track advance sales vs historical baseline.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "Ticket sales report + discount policy" },
+        { "id": "71-02", "title": "Venue/Equipment Rental Optimization", "description": "Rent idle facilities/equipment during off-peak. Partner with local organizations for shared use.", "effort": "Medium", "cash_impact_days": 12, "audit_trail": "Rental log + partnership agreements" }
+      ]
+    },
+    "72": {
+      "sector": "Accommodation & Food Services",
+      "controls": [
+        { "id": "72-01", "title": "Food Waste Tracking", "description": "Weigh/prep waste daily. Adjust par levels. Track waste by menu item and remove low-price/high-waste dishes.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Waste log + menu profitability report" },
+        { "id": "72-02", "title": "Prepaid Revenue & Gift Card Push", "description": "Promote prepaid gift cards (5-10% bonus). Offer deposit-based reservations for large parties. Track redemption liability.", "effort": "Low", "cash_impact_days": 3, "audit_trail": "Gift card sales log + redemption tracker" }
+      ]
+    },
+    "81": {
+      "sector": "Other Services (Repair, Personal Care, Death Care, Laundry, Religious, Civic, Private Households)",
+      "controls": [
+        { "id": "81-01", "title": "Membership/Retainer Prepayment", "description": "Convert transactional clients to retainers. Offer annual prepay discounts. Track customer turnover (churn) vs cash flow.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Retainer agreements + prepayment log" },
+        { "id": "81-02", "title": "Supply Inventory Reduction", "description": "Switch to just-in-time ordering for consumables. Return excess inventory to suppliers where possible.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Inventory reduction log + supplier return records" }
+      ]
+    },
+    "92": {
+      "sector": "Public Administration",
+      "controls": [
+        { "id": "92-01", "title": "Grant & Appropriation Drawdown", "description": "Accelerate submission of expenditure reports. Track appropriation vs actual spend. Follow up on delayed disbursements.", "effort": "Medium", "cash_impact_days": 14, "audit_trail": "Expenditure report log + appropriation tracker" },
+        { "id": "92-02", "title": "Interfund Borrowing Compliance", "description": "Utilize interfund loans per statutory limits. Document repayment schedules. Track fund balance ratios.", "effort": "High", "cash_impact_days": 10, "audit_trail": "Interfund loan agreements + compliance memos" }
+      ]
+    }
+  },
+  "naics_4digit_overrides": {
+    "2362": { "title": "Nonresidential Building Construction", "controls": [{ "id": "2362-01", "title": "Change Order Documentation", "description": "Require signed change orders before work. Track unbilled changes separately. Bill within 48 hours of completion.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "Change order log + client signatures" }] },
+    "4411": { "title": "Automobile Dealers", "controls": [{ "id": "4411-01", "title": "Floorplan Financing Optimization", "description": "Rotate inventory to minimize floorplan interest. Return slow-movers to auction. Track days supply vs financing cost.", "effort": "Medium", "cash_impact_days": 10, "audit_trail": "Floorplan statement + inventory rotation log" }] },
+    "4481": { "title": "Clothing and Clothing Accessories Retailers", "controls": [{ "id": "4481-01", "title": "Seasonal Clearance Acceleration", "description": "Clear out-of-season stock at 30-50% discount. Use flash sales or wholesale liquidators. Track recovery rate.", "effort": "Low", "cash_impact_days": 7, "audit_trail": "Liquidation log + recovery report" }] },
+    "5415": { "title": "Computer Systems Design and Related Services", "controls": [{ "id": "5415-01", "title": "Milestone Billing Enforcement", "description": "Bill on sprint completion. Require client acceptance sign-off before next phase. Track unbilled Work-In-Progress (WIP) daily.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "Sprint completion log + client acceptance records" }] },
+    "7225": { "title": "Restaurants and Other Eating Places", "controls": [{ "id": "7225-01", "title": "Prepaid Revenue & Gift Card Push", "description": "Promote prepaid gift cards (5-10% bonus). Offer deposit-based reservations for large parties. Track redemption liability.", "effort": "Low", "cash_impact_days": 3, "audit_trail": "Gift card sales log + redemption tracker" }] },
+    "6211": { "title": "Offices of Physicians", "controls": [{ "id": "6211-01", "title": "Patient Payment Collection at Visit", "description": "Collect copays/deductibles at check-in. Offer payment plans for balances >$200. Track collection rate weekly.", "effort": "Low", "cash_impact_days": 5, "audit_trail": "Collection rate report + payment plan agreements" }] }
+  },
+  "complete_naics_index": {
+    "1111": "11", "1112": "11", "1113": "11", "1114": "11", "1119": "11",
+    "1121": "11", "1122": "11", "1123": "11", "1124": "11", "1125": "11", "1129": "11",
+    "1131": "11", "1132": "11", "1133": "11", "1141": "11", "1142": "11",
+    "1151": "11", "1152": "11", "1153": "11",
+    "2111": "21", "2121": "21", "2122": "21", "2123": "21", "2131": "21",
+    "2211": "22", "2212": "22", "2213": "22",
+    "2361": "23", "2362": "23", "2371": "23", "2372": "23", "2373": "23", "2379": "23",
+    "2381": "23", "2382": "23", "2383": "23", "2389": "23",
+    "3111": "31", "3112": "31", "3113": "31", "3114": "31", "3115": "31", "3116": "31", "3117": "31", "3118": "31", "3119": "31",
+    "3121": "31", "3122": "31",
+    "3131": "31", "3132": "31", "3133": "31", "3141": "31", "3149": "31",
+    "3151": "31", "3152": "31", "3159": "31", "3161": "31", "3162": "31", "3169": "31",
+    "3211": "32", "3212": "32", "3219": "32", "3221": "32", "3222": "32", "3231": "32",
+    "3241": "32", "3251": "32", "3252": "32", "3253": "32", "3254": "32", "3255": "32", "3256": "32", "3259": "32",
+    "3261": "32", "3262": "32",
+    "3271": "32", "3272": "32", "3273": "32", "3274": "32", "3279": "32",
+    "3311": "33", "3312": "33", "3313": "33", "3314": "33", "3315": "33",
+    "3321": "33", "3322": "33", "3323": "33", "3324": "33", "3325": "33", "3326": "33", "3327": "33", "3328": "33", "3329": "33",
+    "3331": "33", "3332": "33", "3333": "33", "3334": "33", "3335": "33", "3336": "33", "3339": "33",
+    "3341": "33", "3342": "33", "3343": "33", "3344": "33", "3345": "33", "3346": "33",
+    "3351": "33", "3352": "33", "3353": "33", "3359": "33",
+    "3361": "33", "3362": "33", "3363": "33", "3364": "33", "3365": "33", "3366": "33", "3369": "33",
+    "3371": "33", "3372": "33", "3379": "33",
+    "3391": "33", "3399": "33",
+    "4231": "42", "4232": "42", "4233": "42", "4234": "42", "4235": "42", "4236": "42", "4237": "42", "4238": "42", "4239": "42",
+    "4241": "42", "4242": "42", "4243": "42", "4244": "42", "4245": "42", "4246": "42", "4247": "42", "4248": "42", "4249": "42",
+    "4251": "42",
+    "4411": "44", "4412": "44", "4413": "44",
+    "4441": "44", "4442": "44",
+    "4451": "44", "4452": "44", "4453": "44",
+    "4491": "44", "4492": "44",
+    "4551": "45", "4552": "45",
+    "4561": "45", "4571": "45", "4572": "45",
+    "4581": "45", "4582": "45", "4583": "45",
+    "4591": "45", "4592": "45", "4593": "45", "4594": "45", "4595": "45", "4599": "45",
+    "4811": "48", "4812": "48", "4821": "48", "4831": "48", "4832": "48",
+    "4841": "48", "4842": "48",
+    "4851": "48", "4852": "48", "4853": "48", "4854": "48", "4855": "48", "4859": "48",
+    "4861": "48", "4862": "48", "4869": "48",
+    "4871": "48", "4872": "48", "4879": "48",
+    "4881": "48", "4882": "48", "4883": "48", "4884": "48", "4885": "48", "4889": "48",
+    "4911": "49", "4921": "49", "4922": "49", "4931": "49",
+    "5121": "51", "5122": "51", "5131": "51", "5132": "51", "5161": "51", "5162": "51",
+    "5171": "51", "5174": "51", "5178": "51", "5182": "51", "5192": "51",
+    "5211": "52", "5221": "52", "5222": "52", "5223": "52", "5231": "52", "5232": "52", "5239": "52",
+    "5241": "52", "5242": "52", "5251": "52", "5259": "52",
+    "5311": "53", "5312": "53", "5313": "53",
+    "5321": "53", "5322": "53", "5323": "53", "5324": "53", "5331": "53",
+    "5411": "54", "5412": "54", "5413": "54", "5414": "54", "5415": "54", "5416": "54", "5417": "54", "5418": "54", "5419": "54",
+    "5511": "55",
+    "5611": "56", "5612": "56", "5613": "56", "5614": "56", "5615": "56", "5616": "56", "5617": "56", "5619": "56",
+    "5621": "56", "5622": "56", "5629": "56",
+    "6111": "61", "6112": "61", "6113": "61", "6114": "61", "6115": "61", "6116": "61", "6117": "61",
+    "6211": "62", "6212": "62", "6213": "62", "6214": "62", "6215": "62", "6216": "62", "6219": "62",
+    "6221": "62", "6222": "62", "6223": "62",
+    "6231": "62", "6232": "62", "6233": "62", "6239": "62",
+    "6241": "62", "6242": "62", "6243": "62", "6244": "62",
+    "7111": "71", "7112": "71", "7113": "71", "7114": "71", "7115": "71",
+    "7121": "71",
+    "7131": "71", "7132": "71", "7139": "71",
+    "7211": "72", "7212": "72", "7213": "72",
+    "7223": "72", "7224": "72", "7225": "72",
+    "8111": "81", "8112": "81", "8113": "81", "8114": "81",
+    "8121": "81", "8122": "81", "8123": "81", "8129": "81",
+    "8131": "81", "8132": "81", "8133": "81", "8134": "81", "8139": "81",
+    "8141": "81",
+    "9211": "92", "9221": "92", "9231": "92", "9241": "92", "9251": "92", "9261": "92", "9271": "92", "9281": "92"
+  }
+}

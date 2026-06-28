@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "description": "Checks and balances triggered when DSO is below industry benchmark",
+    "focus": "Maintain customer relationships, optimize credit terms strategically, prevent over-tightening from harming revenue",
+    "last_updated": "2026-05-25"
+  },
+  "universal_controls": [
+    {
+      "id": "DSO-F01",
+      "title": "Credit Policy Relaxation Review",
+      "description": "Analyze if collection speed is causing customer customer turnover (churn) or lost bids. Pilot extended terms (net-45/60) for top 20% strategic accounts and track retention vs margin impact.",
+      "effort": "Medium",
+      "impact_days": 14,
+      "category": "Revenue Optimization",
+      "audit_trail": "Credit term pilot log + retention/churn report"
+    },
+    {
+      "id": "DSO-F02",
+      "title": "Customer Experience & Billing Friction Audit",
+      "description": "Survey key accounts on billing clarity, portal usability, and dispute resolution speed. Fast collections shouldn't come at the cost of administrative burden on clients.",
+      "effort": "Low",
+      "impact_days": 7,
+      "category": "Customer Success",
+      "audit_trail": "Client feedback summary + portal UX change log"
+    },
+    {
+      "id": "DSO-F03",
+      "title": "Early Payment Discount Calibration",
+      "description": "Evaluate if 2% discount if paid within 10 days and a due date of 30 days or 1/15 net 45 discounts are still necessary. If cash is already strong, phase out or reduce discounts to improve gross margin.",
+      "effort": "Low",
+      "impact_days": 5,
+      "category": "Margin Improvement",
+      "audit_trail": "Discount utilization report + policy amendment"
+    },
+    {
+      "id": "DSO-F04",
+      "title": "AR Team Reallocation to Revenue Support",
+      "description": "Shift unpaid sales staff capacity from collections to pre-billing verification, contract compliance checks, or customer onboarding to accelerate future revenue recognition.",
+      "effort": "Medium",
+      "impact_days": 21,
+      "category": "Operational Efficiency",
+      "audit_trail": "Staff role change memo + revenue cycle time report"
+    }
+  ],
+  "sector_controls": {
+    "31": {
+      "sector": "Manufacturing",
+      "controls": [
+        { "id": "31-F01", "title": "Supply Chain Financing Leverage", "description": "Use strong unpaid sales velocity to negotiate extended payables terms with suppliers or enroll in supplier financing programs without penalty.", "effort": "Medium", "impact_days": 18, "category": "Working Capital", "audit_trail": "Supplier term agreements + financing program enrollment" },
+        { "id": "31-F02", "title": "Dealer/Distributor Credit Expansion", "description": "Offer higher credit lines to high-performing channel partners to drive volume, monitored by automated DSO caps.", "effort": "Medium", "impact_days": 12, "category": "Channel Growth", "audit_trail": "Credit line approval log + channel sales report" }
+      ]
+    },
+    "44": {
+      "sector": "Retail Trade",
+      "controls": [
+        { "id": "44-F01", "title": "business-to-business (B2B)/Wholesale Division Launch", "description": "Leverage efficient collection infrastructure to onboard commercial buyers or institutional accounts with structured invoicing.", "effort": "High", "impact_days": 30, "category": "Revenue Diversification", "audit_trail": "business-to-business (B2B) onboarding pack + commercial long-term unpaid sales invoices report" }
+      ]
+    },
+    "54": {
+      "sector": "Professional Services",
+      "controls": [
+        { "id": "54-F01", "title": "Retainer/Subscription Conversion", "description": "Convert project-based billing to monthly retainers. Use fast collection track record to justify upfront or auto-debit terms.", "effort": "Medium", "impact_days": 14, "category": "Revenue Model Shift", "audit_trail": "Client conversion agreements + MRR tracking sheet" },
+        { "id": "54-F02", "title": "Scope & Change Order Pre-Billing", "description": "Require signed change orders + 50% upfront before out-of-scope work. Prevents future DSO creep as project volume grows.", "effort": "Low", "impact_days": 5, "category": "Risk Prevention", "audit_trail": "Change order log + upfront payment tracker" }
+      ]
+    },
+    "62": {
+      "sector": "Healthcare",
+      "controls": [
+        { "id": "62-F01", "title": "Patient Financial Experience Review", "description": "Ensure aggressive insurance/patient collection isn't triggering complaints or regulatory scrutiny. Implement hardship programs proactively.", "effort": "Medium", "impact_days": 10, "category": "Compliance & Reputation", "audit_trail": "Patient complaint log + financial assistance policy" }
+      ]
+    }
+  },
+  "naics_4digit_overrides": {
+    "5415": {
+      "title": "Computer Systems Design",
+      "controls": [
+        { "id": "5415-F01", "title": "Multi-Year Contract Incentives", "description": "Offer 3-5% discount for annual prepayment or multi-year Software-as-a-Service (SaaS)/managed service contracts. Lock in cash visibility.", "effort": "Low", "impact_days": 7, "category": "Cash Predictability", "audit_trail": "Contract amendment log + prepayment receipt tracker" }
+      ]
+    },
+    "7225": {
+      "title": "Restaurants & Eating Places",
+      "controls": [
+        { "id": "7225-F01", "title": "Corporate Account & Catering Expansion", "description": "Use efficient invoicing to pitch corporate catering or monthly dining programs with terms for a due date of 15 days.", "effort": "Medium", "impact_days": 14, "category": "business-to-business (B2B) Growth", "audit_trail": "Corporate account agreements + catering unpaid sales log" }
+      ]
+    }
+  },
+  "complete_naics_index": {
+    "3111": "31", "3112": "31", "3118": "31", "3318": "33",
+    "4411": "44", "4481": "45", "4551": "45", "4561": "45",
+    "5411": "54", "5412": "54", "5415": "54", "5416": "54",
+    "6211": "62", "6212": "62", "6214": "62", "6215": "62",
+    "7225": "72", "7211": "72"
+  }
+}

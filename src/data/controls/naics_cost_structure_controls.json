@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "description": "Checks and balances triggered for cost structure and pricing benchmark analysis",
+    "focus": "Monitor variable cost ratios, pricing power, supplier concentration, and cost leakage relative to industry benchmarks",
+    "last_updated": "2026-05-24"
+  },
+  "universal_controls": [
+    {
+      "id": "CS-U01",
+      "title": "Variable Cost Ratio Monitoring",
+      "description": "Track direct materials, direct labor, and variable general & administrative as percentage of revenue monthly. Flag any month-over-month increase more than 2% against benchmark.",
+      "effort": "Low",
+      "impact_days": 7,
+      "category": "Cost Analytics",
+      "audit_trail": "Monthly variable cost ledger + benchmark comparison report"
+    },
+    {
+      "id": "CS-U02",
+      "title": "Supplier Concentration Risk Assessment",
+      "description": "Ensure no single supplier represents >30% of cost of sales. Identify backup suppliers and document dual-source agreements for critical inputs.",
+      "effort": "Medium",
+      "impact_days": 14,
+      "category": "Supply Chain Risk",
+      "audit_trail": "Supplier spend concentration report + backup vendor agreements"
+    },
+    {
+      "id": "CS-U03",
+      "title": "Pricing Power & Elasticity Testing",
+      "description": "Test price adjustments on a subset of customers/products quarterly. Measure volume sensitivity and margin retention to validate pricing strategy.",
+      "effort": "Medium",
+      "impact_days": 21,
+      "category": "Pricing Strategy",
+      "audit_trail": "Price test design + elasticity measurement results"
+    },
+    {
+      "id": "CS-U04",
+      "title": "Cost Leakage & Phantom Expense Audit",
+      "description": "Review accruals, prepaid amortization, and intercompany allocations for misclassification. Ensure fixed costs aren't bleeding into variable cost lines.",
+      "effort": "High",
+      "impact_days": 30,
+      "category": "Financial Compliance",
+      "audit_trail": "Cost center reconciliation + allocation theory and planning documentation"
+    }
+  ],
+  "sector_controls": {
+    "31": {
+      "sector": "Manufacturing",
+      "controls": [
+        {
+          "id": "31-CS01",
+          "title": "Bill of Materials Variance Control",
+          "description": "Compare actual material usage vs. standard BOM per production run. Investigate variances >5% for waste, theft, or specification drift.",
+          "effort": "Medium",
+          "impact_days": 7,
+          "category": "Production Cost Control",
+          "audit_trail": "BOM variance report + root cause analysis log"
+        },
+        {
+          "id": "31-CS02",
+          "title": "Scrap & Rework Cost Tracking",
+          "description": "Tag and track all scrap and rework costs by workstation. Target <2% of total production cost; escalate if trending above benchmark.",
+          "effort": "Low",
+          "impact_days": 7,
+          "category": "Quality Cost Management",
+          "audit_trail": "Scrap register by workstation + rework labor hour logs"
+        }
+      ]
+    },
+    "44": {
+      "sector": "Retail Trade",
+      "controls": [
+        {
+          "id": "44-CS01",
+          "title": "Shrinkage & Inventory Loss Monitoring",
+          "description": "Perform cycle counts weekly for high-value SKUs. Compare Point-of-Sale (POS) sales to inventory depletion; flag discrepancies >1.5% for investigation.",
+          "effort": "Medium",
+          "impact_days": 7,
+          "category": "Loss Prevention",
+          "audit_trail": "Cycle count sheets + shrinkage investigation reports"
+        },
+        {
+          "id": "44-CS02",
+          "title": "Markdown & Promotional Cost Analysis",
+          "description": "Track gross margin impact of all markdowns and promotions. Ensure promotional lifts justify margin sacrifice vs. baseline sales.",
+          "effort": "Medium",
+          "impact_days": 14,
+          "category": "Promotional Economics",
+          "audit_trail": "Promotion P&L by campaign + lift analysis report"
+        }
+      ]
+    },
+    "54": {
+      "sector": "Professional Services",
+      "controls": [
+        {
+          "id": "54-CS01",
+          "title": "Utilization & Realization Rate Tracking",
+          "description": "Monitor billable hours vs. total hours (utilization) and collected revenue vs. billed revenue (realization). Target both >75% for margin health.",
+          "effort": "Low",
+          "impact_days": 7,
+          "category": "Resource Economics",
+          "audit_trail": "Weekly utilization dashboard + realization aging report"
+        },
+        {
+          "id": "54-CS02",
+          "title": "Scope Creep & Fixed-Fee Margin Protection",
+          "description": "For fixed-fee engagements, track actual hours vs. budgeted hours weekly. Require change order approval if variance exceeds 10%.",
+          "effort": "Medium",
+          "impact_days": 7,
+          "category": "Project Margin Control",
+          "audit_trail": "Engagement burn report + change order log"
+        }
+      ]
+    },
+    "72": {
+      "sector": "Hospitality & Food Services",
+      "controls": [
+        {
+          "id": "72-CS01",
+          "title": "Food Cost Percentage & Portion Control",
+          "description": "Calculate food cost as % of menu item revenue weekly. Standardize recipes with exact portions; audit plate waste and comp tickets.",
+          "effort": "Medium",
+          "impact_days": 7,
+          "category": "Cost of Goods Sold",
+          "audit_trail": "Recipe cost cards + weekly food cost P&L by category"
+        },
+        {
+          "id": "72-CS02",
+          "title": "Labor Cost Scheduling Optimization",
+          "description": "Match labor schedules to forecasted covers/revenue. Target labor cost <30% of revenue; flag overtime >5% of total labor hours.",
+          "effort": "Low",
+          "impact_days": 7,
+          "category": "Labor Economics",
+          "audit_trail": "Schedule vs. actual labor report + overtime justification log"
+        }
+      ]
+    }
+  },
+  "naics_4digit_overrides": {
+    "3118": {
+      "title": "Bakeries and Tortilla Manufacturing",
+      "controls": [
+        {
+          "id": "3118-CS01",
+          "title": "Ingredient Commodity Hedge Review",
+          "description": "Flour, sugar, and oil represent >50% of cost of sales. Monitor commodity futures and evaluate forward contracts or hedging to stabilize input costs.",
+          "effort": "High",
+          "impact_days": 14,
+          "category": "Commodity Risk",
+          "audit_trail": "Commodity price tracker + hedge position register"
+        },
+        {
+          "id": "3118-CS02",
+          "title": "Yield & Batch Consistency Audit",
+          "description": "Track actual output vs. theoretical yield per batch. Inconsistent yields signal recipe drift, scaling errors, or spoilage.",
+          "effort": "Medium",
+          "impact_days": 7,
+          "category": "Production Efficiency",
+          "audit_trail": "Batch yield log + theoretical vs. actual reconciliation"
+        }
+      ]
+    },
+    "3341": {
+      "title": "Computer and Peripheral Equipment Manufacturing",
+      "controls": [
+        {
+          "id": "3341-CS01",
+          "title": "Component Obsolescence & EOL Cost Management",
+          "description": "Semiconductor and component EOL cycles are rapid. Monitor supplier EOL notices and maintain last-time-buy budgets to avoid premium spot-market costs.",
+          "effort": "High",
+          "impact_days": 30,
+          "category": "Supply Chain Planning",
+          "audit_trail": "EOL notice tracker + last-time-buy authorization log"
+        }
+      ]
+    },
+    "5412": {
+      "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+      "controls": [
+        {
+          "id": "5412-CS01",
+          "title": "Client Acquisition Cost vs. Lifetime Value Analysis",
+          "description": "Track marketing, sales, and onboarding hours per new client. Ensure CAC is recovered within 12 months via recurring revenue.",
+          "effort": "Medium",
+          "impact_days": 14,
+          "category": "Client Economics",
+          "audit_trail": "CAC by channel + client lifetime value cohort report"
+        }
+      ]
+    },
+    "7211": {
+      "title": "Traveler Accommodation",
+      "controls": [
+        {
+          "id": "7211-CS01",
+          "title": "Cost Per Available Room (CPAR) Benchmarking",
+          "description": "Track housekeeping, maintenance, and utilities cost per available room. Compare to STR reports for same-scale competitors.",
+          "effort": "Medium",
+          "impact_days": 14,
+          "category": "Unit Economics",
+          "audit_trail": "Monthly CPAR calculation + STR competitive set comparison"
+        }
+      ]
+    }
+  },
+  "complete_naics_index": {
+    "3111": "31",
+    "3118": "31",
+    "3119": "31",
+    "3251": "32",
+    "3261": "32",
+    "3311": "33",
+    "3341": "33",
+    "3351": "33",
+    "3361": "33",
+    "4411": "44",
+    "4441": "44",
+    "4451": "44",
+    "4481": "44",
+    "4551": "45",
+    "4561": "45",
+    "4571": "45",
+    "4581": "45",
+    "5411": "54",
+    "5412": "54",
+    "5413": "54",
+    "5415": "54",
+    "6211": "62",
+    "6214": "62",
+    "6215": "62",
+    "6216": "62",
+    "7211": "72",
+    "7212": "72",
+    "7223": "72",
+    "7225": "72",
+    "2361": "23",
+    "2362": "23",
+    "2371": "23",
+    "2381": "23"
+  }
+}

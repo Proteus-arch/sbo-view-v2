@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when gross margin is above industry benchmark",
+  "focus": "Sustain advantage, reinvest strategically, monitor quality/churn risk, and optimize competitive positioning",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "GM-A01",
+   "title": "Margin Sustainability & Quality Audit",
+   "description": "Verify the money after cost of sales isn't driven by deferred maintenance, underinvestment, or quality shortcuts. Track customer complaints, returns, and warranty costs.",
+   "effort": "Medium",
+   "impact_days": 14,
+   "category": "Quality Assurance",
+   "audit_trail": "Return/warranty log + customer satisfaction survey"
+  },
+  {
+   "id": "GM-A02",
+   "title": "Strategic Reinvestment Policy",
+   "description": "Allocate excess money after cost of sales to Research & Development (R&D), technology, staff training, or customer experience. Track Return on Investment (ROI) on reinvestment quarterly to prevent reduction of revenue.",
+   "effort": "High",
+   "impact_days": 30,
+   "category": "Capital Allocation",
+   "audit_trail": "Reinvestment ledger + quarterly Return on Investment (ROI) report"
+  },
+  {
+   "id": "GM-A03",
+   "title": "Competitive Pricing & Market Share Review",
+   "description": "Compare pricing against top 3 competitors. Ensure premium pricing is justified by differentiated value. Test how much customers change their buying habits when a price changes to avoid volume loss.",
+   "effort": "Medium",
+   "impact_days": 10,
+   "category": "Market Positioning",
+   "audit_trail": "Competitor price tracker + elasticity test results"
+  },
+  {
+   "id": "GM-A04",
+   "title": "Supplier Partnership & Long-Term Contracting",
+   "description": "Leverage healthy bottom lines on specific goods and services to lock in favorable long-term supplier contracts or exclusive terms. Prevent future erratic changes in cost of sales.",
+   "effort": "Medium",
+   "impact_days": 21,
+   "category": "Supply Chain Strategy",
+   "audit_trail": "Long-term contract repository + cost stability forecast"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-A01", "title": "Premium Product Line Expansion", "description": "Increase the price of basic sales offerings to develop higher-specification or branded product tiers. Track uptake and cannibalization vs. standard lines.", "effort": "High", "impact_days": 45, "category": "Product Strategy", "audit_trail": "Product development roadmap + tiered sales report" },
+    { "id": "31-A02", "title": "Predictive Maintenance & Uptime Investment", "description": "Fund sensors connected to the internet or predictive maintenance software to maximize machine uptime and prevent margin-eroding breakdowns.", "effort": "Medium", "impact_days": 21, "category": "Operational Excellence", "audit_trail": "Maintenance tech deployment log + OEE improvement report" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-A01", "title": "Loyalty & Customer Experience Funding", "description": "Redirect margin surplus into tiered loyalty programs, enhanced store experience, or faster checkout tech. Track retention vs. acquisition cost.", "effort": "Medium", "impact_days": 14, "category": "Customer Retention", "audit_trail": "Loyalty program Return on Investment (ROI) + CX investment tracker" },
+    { "id": "44-A02", "title": "Private Label & Exclusive Vendor Terms", "description": "Develop higher priced private label alternatives or negotiate exclusive regional distribution rights to defend against price competition.", "effort": "High", "impact_days": 30, "category": "Assortment Strategy", "audit_trail": "Private label margin report + exclusivity agreements" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-A01", "title": "Value-Based Pricing Transition", "description": "Shift from hourly to value/outcome-based pricing for top-tier clients. Document Return on Investment (ROI) delivered to justify premium rates.", "effort": "High", "impact_days": 21, "category": "Pricing Maturity", "audit_trail": "Value pricing framework + client Return on Investment (ROI) case studies" },
+    { "id": "54-A02", "title": "Intellectual Property (IP) Productization & Scalable Delivery", "description": "Package theories and plans into templates, courses, or Software-as-a-Service (SaaS) tools. Track recurring revenue shift and delivery cost reduction.", "effort": "Medium", "impact_days": 30, "category": "Business Model Evolution", "audit_trail": "IP product roadmap + recurring revenue tracker" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-A01", "title": "Staff Retention & Skill Upskilling", "description": "Fund certification programs, cross-training, or performance bonuses. More revenue should lead to less employee turnover and better service quality.", "effort": "Medium", "impact_days": 14, "category": "Human Capital", "audit_trail": "Training completion log + turnover rate report" },
+    { "id": "72-A02", "title": "Premium Experience & Differentiation", "description": "Invest in ambiance upgrades, curated menus, or exclusive partnerships. Track average check size and repeat visit frequency.", "effort": "Medium", "impact_days": 21, "category": "Brand Positioning", "audit_trail": "Experience upgrade ledger + repeat customer analytics" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-A01", "title": "Bid Selectivity & Premium Project Focus", "description": "Focus on the projects that bring in the most money for the least amount of work. Bid only on projects with clear scope and premium pricing power. Avoid low-bid commodity work.", "effort": "Low", "impact_days": 7, "category": "Sales Strategy", "audit_trail": "Bid/No-Bid decision log + win rate analysis" },
+    { "id": "23-A02", "title": "Subcontractor Relationship Investment", "description": "Lock in preferred subcontractors with early payment incentives to secure priority scheduling and quality workmanship.", "effort": "Medium", "impact_days": 14, "category": "Supply Chain", "audit_trail": "Subcontractor agreement + performance review" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-A01", "title": "Artisanal & Premium Line Launch", "description": "Launch high-price artisanal breads or organic tortillas. Track premium healthy bottom lines on premium goods and services vs. standard lines.", "effort": "Medium", "impact_days": 21, "category": "Product Innovation", "audit_trail": "New product P&L + shelf space allocation log" },
+    { "id": "3118-A02", "title": "Flour Contract Lock-In", "description": "Use money after cost of sales to sign long-term fixed-price flour contracts, protecting against future commodity spikes.", "effort": "Medium", "impact_days": 14, "category": "Cost Hedging", "audit_trail": "Contract agreement + price variance tracker" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-A01", "title": "Finance & Insurance (F&I) Penetration Maximization", "description": "Train staff on high-price Finance & Insurance (F&I) products (warranties, Guaranteed Asset Protection (GAP)). Track the percentage of customers who buy an additional product or service along with a main purchase (attachment rate)s and commission per unit.", "effort": "Medium", "impact_days": 14, "category": "Revenue Mix", "audit_trail": "Finance & Insurance (F&I) penetration report + commission ledger" },
+    { "id": "4411-A02", "title": "Service Department Price Optimization", "description": "Increase labor rates and parts markup on non-warranty work. Monitor customer retention to ensure no customer turnover (churn).", "effort": "Low", "impact_days": 7, "category": "Pricing Control", "audit_trail": "Service price list + retention rate tracker" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-A01", "title": "Managed Services Upsell", "description": "Convert project clients to high-price managed services retainers. Track recurring revenue growth and customer turnover (churn).", "effort": "High", "impact_days": 30, "category": "Business Model Shift", "audit_trail": "Retainer conversion log + MRR tracker" },
+    { "id": "5415-A02", "title": "Cloud Margin Pass-Through Optimization", "description": "Negotiate better cloud partner rates and pass through savings or keep as margin. Track cloud-based money after cost of sales.", "effort": "Medium", "impact_days": 14, "category": "Direct Cost Control", "audit_trail": "Partner agreement + cloud margin report" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-A01", "title": "Signature Dish & Premium Pricing", "description": "Highlight high-price signature dishes. Increase prices on popular items.", "effort": "Low", "impact_days": 7, "category": "Menu Engineering", "audit_trail": "Menu price change log + item-level margin report" },
+    { "id": "7225-A02", "title": "Wine & Cocktail Program Expansion", "description": "Expand high-price beverage offerings. Train staff on upselling premium drinks. Track the cost of beverages.", "effort": "Medium", "impact_days": 14, "category": "Revenue Diversification", "audit_trail": "Beverage menu + cost of goods sold report" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-A01", "title": "Change Order Margin Capture", "description": "Ensure all change orders include full general & administrative and profit. Track change orders against the base contract.", "effort": "Low", "impact_days": 5, "category": "Billing Control", "audit_trail": "Change order log + margin analysis" },
+    { "id": "2361-A02", "title": "Premium Finish Upgrade Sales", "description": "Push clients toward higher priced finish options (cabinets, flooring). Track upgrade the percentage of customers who buy an additional product or service along with a main purchase (attachment rate).", "effort": "Medium", "impact_days": 14, "category": "Sales Strategy", "audit_trail": "Upgrade selection log + margin uplift report" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-A01", "title": "Private Label Brand Expansion", "description": "Expand private label skincare or supplements. Track private label sales vs. national brands.", "effort": "High", "impact_days": 30, "category": "Product Strategy", "audit_trail": "Private label P&L + market share report" },
+    { "id": "4561-A02", "title": "Consultation Service Fees", "description": "Introduce fees for specialized consultations (nutrition, skin care). Track service revenue and conversion to product sales.", "effort": "Medium", "impact_days": 14, "category": "Service Revenue", "audit_trail": "Service fee log + conversion tracker" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-A01", "title": "Advisory Service Tier Launch", "description": "Package financial insights, cash flow forecasting, or compliance advisory as premium retainers. Track conversion from compliance-only clients.", "effort": "Medium", "impact_days": 21, "category": "Service Evolution", "audit_trail": "Advisory package rollout + client upgrade tracker" },
+    { "id": "5412-A02", "title": "Fixed-Fee Pricing Implementation", "description": "Shift from hourly to fixed-fee pricing for routine tasks. Track the efficiency of team members that produce billable goods or services.", "effort": "Medium", "impact_days": 14, "category": "Pricing Strategy", "audit_trail": "Pricing model comparison + realization report" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-A01", "title": "Dynamic Yield & Ancillary Revenue Optimization", "description": "Implement AI-driven pricing and upsell premium add-ons (early check-in, experiences, Food & Beverage (F&B)). Track Revenue Per Available Room (RevPAR) and supplemental margin lift.", "effort": "Medium", "impact_days": 14, "category": "Revenue Management", "audit_trail": "Yield pricing dashboard + supplemental revenue report" },
+    { "id": "7211-A02", "title": "Direct Booking Incentives", "description": "Offer perks for direct bookings to avoid Online Travel Agency (OTA) commissions. Track direct booking percentage and commission savings.", "effort": "Medium", "impact_days": 21, "category": "Channel Strategy", "audit_trail": "Channel mix report + commission savings log" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

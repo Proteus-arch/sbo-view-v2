@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "description": "Checks and balances triggered when cash runway EXCEEDS industry benchmark",
+    "focus": "Capital efficiency, growth investment, debt optimization, and preventing waste"
+  },
+  "universal_growth_controls": [
+    {
+      "id": "G01",
+      "title": "Idle Cash Sweep Policy",
+      "description": "Maintain only 30 days of operating expenses in checking. Automatically sweep excess into high-yield savings or money market funds weekly.",
+      "effort": "Low",
+      "impact": "Maximizes yield on excess cash without risking spendable cash",
+      "category": "Efficiency"
+    },
+    {
+      "id": "G02",
+      "title": "High-Interest Debt Retirement",
+      "description": "Identify any debt with interest rates >8%. Create a payoff schedule using excess cash. Prioritize variable-rate debt first.",
+      "effort": "Medium",
+      "impact": "Guaranteed risk-free return equal to the interest rate saved",
+      "category": "Debt Management"
+    },
+    {
+      "id": "G03",
+      "title": "Vendor Early-Payment Negotiation",
+      "description": "Leverage excess cash to negotiate 2% discount if paid within 10 days Net 30 terms with top 5 vendors. Implement a system to automatically capture these discounts.",
+      "effort": "Low",
+      "impact": "Immediate reduction in cost of sales/OpEx",
+      "category": "Efficiency"
+    },
+    {
+      "id": "G04",
+      "title": "Formal Capital Allocation Policy",
+      "description": "Establish written thresholds for spending (e.g., any expense >$5k requires Return on Investment (ROI) calculation  more than 15%). Prevents 'cash burn' just because funds are available.",
+      "effort": "High",
+      "impact": "Prevents 'Lifestyle Creep' and low-Return on Investment (ROI) waste",
+      "category": "Governance"
+    }
+  ],
+  "sector_growth_controls": {
+    "31": {
+      "sector": "Manufacturing",
+      "controls": [
+        { "id": "31-G01", "title": "Preventive Maintenance Overhaul", "description": "Use excess cash to fully fund the maintenance backlog on critical machinery. Reduces unplanned downtime risk.", "effort": "Medium", "impact": "Long-term reliability & OEE improvement", "category": "Operational Resilience" },
+        { "id": "31-G02", "title": "Automation CapEx Reserve", "description": "Establish a dedicated sinking fund for the next equipment upgrade cycle. Prevents financing needs when the machine eventually breaks.", "effort": "Low", "impact": "Interest-free future CapEx", "category": "Strategic Planning" }
+      ]
+    },
+    "44": {
+      "sector": "Retail Trade",
+      "controls": [
+        { "id": "44-G01", "title": "Inventory Expansion Strategy", "description": "Analyze stockout data. Use excess cash to deepen inventory levels on high-turnover, high-price SKUs.", "effort": "Medium", "impact": "Increased sales capture & customer satisfaction", "category": "Growth" },
+        { "id": "44-G02", "title": "Store Renovation Reserve", "description": "Accumulate funds for a planned 'refresh' of the store layout or signage to match current brand standards.", "effort": "Low", "impact": "Increased foot traffic conversion", "category": "Marketing" }
+      ]
+    },
+    "54": {
+      "sector": "Professional Services",
+      "controls": [
+        { "id": "54-G01", "title": "Intellectual Property Development", "description": "Allocate budget to productize services (create templates, courses, or Software-as-a-Service (SaaS) tools) to generate passive revenue.", "effort": "High", "impact": "Diversifies revenue stream beyond billable hours", "category": "Growth" },
+        { "id": "54-G02", "title": "Key Person Insurance Funding", "description": "Use excess cash to fund Buy-Sell agreements or Key Person life insurance policies.", "effort": "Low", "impact": "Business continuity protection", "category": "Risk Management" }
+      ]
+    },
+    "23": {
+      "sector": "Construction",
+      "controls": [
+        { "id": "23-G01", "title": "Bonding Capacity Improvement", "description": "Strengthen balance sheet with excess cash to qualify for higher bonding limits, enabling bidding on larger public projects.", "effort": "Low", "impact": "Access to larger, higher priced contracts", "category": "Growth" }
+      ]
+    },
+    "72": {
+      "sector": "Hospitality & Food Services",
+      "controls": [
+        { "id": "72-G01", "title": "Staff Retention Program", "description": "Implement a bonus pool or certification reimbursement program to reduce turnover costs.", "effort": "Medium", "impact": "Lower recruiting costs & better service", "category": "Human Capital" }
+      ]
+    }
+  }
+}

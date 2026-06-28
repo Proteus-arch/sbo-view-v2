@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when debt-to-equity ratio is below industry benchmark",
+  "focus": "Strategic leverage utilization, tax shield optimization, growth financing, and shareholder returns",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "DE-B01",
+   "title": "Leverage for Strategic Capex",
+   "description": "Fund expansion, automation, or market entry with low-cost debt instead of selling stock in your company to preserve ownership and boost Return on Company's Value.",
+   "effort": "High",
+   "impact_days": 21,
+   "category": "Growth Financing",
+   "audit_trail": "Capex funding plan + Return on Company's Value projection sheet"
+  },
+  {
+   "id": "DE-B02",
+   "title": "Tax Shield Optimization",
+   "description": "Evaluate debt-financed acquisitions or asset purchases to maximize interest deductibility and lower effective tax rate.",
+   "effort": "Medium",
+   "impact_days": 14,
+   "category": "Tax Strategy",
+   "audit_trail": "Tax impact model + debt structuring memo"
+  },
+  {
+   "id": "DE-B03",
+   "title": "Share Repurchase Program",
+   "description": "Deploy low-cost debt to fund buybacks if stock is undervalued. Reduces share count and boosts Earnings per Share compared to Return on Company's Value.",
+   "effort": "Medium",
+   "impact_days": 10,
+   "category": "Capital Allocation",
+   "audit_trail": "Buyback authorization + Earnings per Share impact tracker"
+  },
+  {
+   "id": "DE-B04",
+   "title": "M&A Debt Financing",
+   "description": "Use leveraged buyout structures or bridge loans to acquire competitors, talent, or intellectual property (patents, copyright, and trademarks - IP) without diluting existing owners.",
+   "effort": "High",
+   "impact_days": 30,
+   "category": "Strategic Expansion",
+   "audit_trail": "Acquisition term sheet + synergy realization report"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-B01", "title": "Automation & Capacity Expansion Financing", "description": "Secure equipment loans or term debt for robotics, CNC upgrades, or new production lines to scale output.", "effort": "High", "impact_days": 25, "category": "Operational Scaling", "audit_trail": "Equipment loan docs + capacity uplift report" },
+    { "id": "31-B02", "title": "Strategic Acquisition Funding", "description": "Use debt to acquire smaller competitors or suppliers to consolidate market share.", "effort": "High", "impact_days": 45, "category": "M&A Strategy", "audit_trail": "Acquisition pipeline + integration plan" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-B01", "title": "E-Commerce Platform & Logistics Scaling", "description": "Finance fulfillment center automation, last-mile tech, or omnichannel inventory systems to capture market share.", "effort": "Medium", "impact_days": 18, "category": "Digital Growth", "audit_trail": "Tech procurement ledger + fulfillment KPI tracker" },
+    { "id": "44-B02", "title": "Store Expansion & Remodel Funding", "description": "Leverage balance sheet to open new locations or remodel existing stores to drive premium positioning.", "effort": "High", "impact_days": 30, "category": "Growth Capex", "audit_trail": "Expansion budget + Return on Investment (ROI) tracker" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-B01", "title": "Talent Acquisition & Platform Debt", "description": "Use revenue-based financing to hire senior talent or build scalable delivery platforms without immediate cash drain.", "effort": "Medium", "impact_days": 14, "category": "Human Capital", "audit_trail": "Hiring plan + financing agreement" },
+    { "id": "54-B02", "title": "Partner Buyout Financing", "description": "Finance the buyout of retiring partners using debt to maintain ownership concentration.", "effort": "Medium", "impact_days": 21, "category": "Ownership Structure", "audit_trail": "Buyout agreement + debt amortization schedule" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-B01", "title": "Brand Expansion & Renovation Leverage", "description": "Fund new location rollouts or flagship renovations with SBA loans or franchise-backed debt to drive premium positioning.", "effort": "High", "impact_days": 21, "category": "Growth Capex", "audit_trail": "Location rollout tracker + loan amortization schedule" },
+    { "id": "72-B02", "title": "Loyalty Program Tech Investment", "description": "Finance advanced Customer Relations Management (CRM) software or loyalty app development to increase customer lifetime value.", "effort": "Medium", "impact_days": 14, "category": "Tech Scaling", "audit_trail": "Tech investment log + LTV/CAC report" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-B01", "title": "Equipment Fleet Expansion Financing", "description": "Finance new equipment purchases to reduce rental costs and bid on larger projects.", "effort": "High", "impact_days": 21, "category": "Asset Acquisition", "audit_trail": "Equipment loan docs + utilization tracker" },
+    { "id": "23-B02", "title": "Strategic Acquisition of Niche Subcontractors", "description": "Acquire specialized subcontractors to verticalize operations and capture more margin.", "effort": "High", "impact_days": 45, "category": "Vertical Integration", "audit_trail": "Acquisition docs + margin uplift report" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-B01", "title": "Automated Production Line Financing", "description": "Use debt to fund automated dough handling or packaging lines to scale volume and reduce labor costs.", "effort": "High", "impact_days": 30, "category": "Automation", "audit_trail": "Equipment loan + efficiency report" },
+    { "id": "3118-B02", "title": "Competitor Acquisition Debt", "description": "Finance acquisition of regional bakeries to consolidate distribution routes.", "effort": "High", "impact_days": 45, "category": "M&A", "audit_trail": "Acquisition term sheet + route optimization report" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-B01", "title": "Finance & Insurance (F&I) Software & Training Investment", "description": "Finance advanced Finance & Insurance (F&I) tools and staff training to increase the percentage of customers who buy an additional product or service along with a main purchase (attachment rate)s and gross profit.", "effort": "Medium", "impact_days": 14, "category": "Service Optimization", "audit_trail": "Tech procurement + penetration report" },
+    { "id": "4411-B02", "title": "Service Department Expansion", "description": "Leverage balance sheet to add service bays or EV diagnostic capability to capture overflow work.", "effort": "High", "impact_days": 21, "category": "Revenue Diversification", "audit_trail": "Expansion budget + absorption tracker" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-B01", "title": "IP Acquisition Financing", "description": "Use debt to acquire proprietary software or algorithms to differentiate service offerings.", "effort": "High", "impact_days": 30, "category": "Strategic Assets", "audit_trail": "Acquisition docs + differentiation report" },
+    { "id": "5415-B02", "title": "Global Delivery Center Funding", "description": "Finance offshore delivery centers to reduce cost base and improve margin.", "effort": "High", "impact_days": 21, "category": "Cost Optimization", "audit_trail": "Offshore setup plan + margin uplift report" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-B01", "title": "Ghost Kitchen Expansion Financing", "description": "Leverage debt to launch off-premise-only kitchens in high-demand zip codes with lower real estate general & administrative.", "effort": "Medium", "impact_days": 18, "category": "Format Innovation", "audit_trail": "Site lease docs + delivery volume tracker" },
+    { "id": "7225-B02", "title": "Loyalty Program Tech Investment", "description": "Finance advanced Customer Relations Management (CRM) software or loyalty app development to increase customer lifetime value.", "effort": "Medium", "impact_days": 14, "category": "Tech Scaling", "audit_trail": "Tech investment log + LTV/CAC report" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-B01", "title": "Land Banking Financing", "description": "Use debt to acquire strategic land parcels for future development cycles.", "effort": "High", "impact_days": 30, "category": "Strategic Assets", "audit_trail": "Land acquisition docs + development plan" },
+    { "id": "2361-B02", "title": "Specialty Subcontractor Acquisition", "description": "Acquire niche subcontractors to verticalize operations and capture more margin.", "effort": "High", "impact_days": 45, "category": "Vertical Integration", "audit_trail": "Acquisition docs + margin uplift report" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-B01", "title": "Private Label Expansion Funding", "description": "Finance development and inventory for high-price private label products.", "effort": "High", "impact_days": 21, "category": "Product Strategy", "audit_trail": "Product development budget + margin report" },
+    { "id": "4561-B02", "title": "Store Acquisition & Rollup", "description": "Use debt to acquire independent pharmacies or wellness stores to consolidate market share.", "effort": "High", "impact_days": 45, "category": "M&A", "audit_trail": "Acquisition pipeline + integration plan" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-B01", "title": "Advisory Practice Acquisition Debt", "description": "Finance roll-up acquisitions of smaller compliance firms to cross-sell high-price advisory services.", "effort": "High", "impact_days": 25, "category": "M&A Strategy", "audit_trail": "Acquisition pipeline + cross-sell attachment log" },
+    { "id": "5412-B02", "title": "Partner Buyout Financing", "description": "Finance the buyout of retiring partners using debt to maintain ownership concentration.", "effort": "Medium", "impact_days": 21, "category": "Ownership Structure", "audit_trail": "Buyout agreement + debt amortization schedule" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-B01", "title": "Property Renovation & Repositioning", "description": "Leverage debt to fund major renovations or rebranding to command premium Average Daily Rate (ADR).", "effort": "High", "impact_days": 30, "category": "Brand Positioning", "audit_trail": "Renovation budget + Average Daily Rate (ADR) uplift report" },
+    { "id": "7211-B02", "title": "Ancillary Revenue Tech Investment", "description": "Finance spa, Food & Beverage (F&B), or experience tech to diversify revenue streams.", "effort": "Medium", "impact_days": 21, "category": "Revenue Diversification", "audit_trail": "Tech investment log + supplemental revenue report" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

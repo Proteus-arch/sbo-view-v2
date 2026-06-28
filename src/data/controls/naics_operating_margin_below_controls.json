@@ -1,0 +1,148 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when operating margin is below industry benchmark",
+  "focus": "Reduce OpEx, rationalize general & administrative, convert fixed costs to variable, and improve administrative/labor efficiency",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "OM-B01",
+   "title": "Selling, General & Admin (SG&A) Variance & Overhead Audit",
+   "description": "Split operating expenses into payroll, rent, utilities, marketing, and admin. Flag any line item more than 3% above historical baseline. Investigate bloat or misallocation.",
+   "effort": "Medium",
+   "impact_days": 7,
+   "category": "Cost Analysis",
+   "audit_trail": "Selling, General & Admin (SG&A) variance report + general & administrative root-cause log"
+  },
+  {
+   "id": "OM-B02",
+   "title": "Non-Essential Expense Freeze",
+   "description": "Halt discretionary spending: travel, events, non-critical software, and external consultants. Require CFO approval for all operating expenses (OpEx) more than $500.", "effort": "Low",
+   "impact_days": 3,
+   "category": "Expense Control",
+   "audit_trail": "Expense freeze memo + approval threshold log"
+  },
+  {
+   "id": "OM-B03",
+   "title": "Fixed-to-Variable Cost Conversion",
+   "description": "Shift non-core functions to outsourced or usage-based models. Renegotiate leases to percentage rent or short-term flex terms.", "effort": "High",
+   "impact_days": 21,
+   "category": "Cost Structure",
+   "audit_trail": "Vendor transition log + lease renegotiation tracker"
+  },
+  {
+   "id": "OM-B04",
+   "title": "Administrative Staff Optimization",
+   "description": "Review support headcount vs revenue scale. Consolidate roles, implement shared services, or pause back-office hiring until margin normalizes.", "effort": "Medium",
+   "impact_days": 14,
+   "category": "Labor Efficiency",
+   "audit_trail": "Headcount review sheet + role consolidation log"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-B01", "title": "Overhead Absorption Review", "description": "Track fixed manufacturing general & administrative per unit. Consolidate shifts or idle lines to improve absorption rates during low-volume periods.", "effort": "Medium", "impact_days": 10, "category": "Production Efficiency", "audit_trail": "Absorption rate report + shift consolidation log" },
+    { "id": "31-B02", "title": "Indirect Labor Rationalization", "description": "Audit maintenance, Quality Assurance (QA), and material handling headcount. Cross-train or automate repetitive tasks to reduce non-direct labor costs.", "effort": "High", "impact_days": 18, "category": "Labor Efficiency", "audit_trail": "Indirect labor audit + cross-training tracker" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-B01", "title": "Store Payroll Optimization", "description": "Align staff hours to traffic forecasts. Reduce manager layers and implement self-checkout to lower the cost of labor.", "effort": "Medium", "impact_days": 14, "category": "Workforce Management", "audit_trail": "Payroll optimization report + traffic vs staffing sheet" },
+    { "id": "44-B02", "title": "Corporate Selling, General & Admin (SG&A) Reduction", "description": "Consolidate regional offices, pause non-essential marketing, and renegotiate vendor contracts to lower corporate general & administrative.", "effort": "High", "impact_days": 21, "category": "Corporate Efficiency", "audit_trail": "Selling, General & Admin (SG&A) reduction plan + vendor renegotiation log" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-B01", "title": "Non-Billable Work Freeze", "description": "Halt internal Research & Development (R&D), training, and admin projects. Redirect all staff hours to client-facing billable work until margin recovers.", "effort": "Low", "impact_days": 5, "category": "Utilization Control", "audit_trail": "Project freeze memo + billable utilization report" },
+    { "id": "54-B02", "title": "Office Space & Lease Downsize", "description": "Sublease unused space or shift to hybrid remote model. Negotiate rent abatements or early lease termination to reduce fixed general & administrative.", "effort": "High", "impact_days": 30, "category": "Real Estate", "audit_trail": "Lease amendment log + occupancy cost reduction sheet" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-B01", "title": "Labor Hour Rationalization", "description": "Cut non-essential shifts, reduce management layers, and implement strict overtime caps. Track the cost of labor daily.", "effort": "Low", "impact_days": 7, "category": "Workforce Management", "audit_trail": "Labor cost report + overtime freeze log" },
+    { "id": "72-B02", "title": "Utility & Energy Audit", "description": "Identify high-cost utilities (HVAC, lighting, water). Implement immediate conservation measures and renegotiate supplier rates.", "effort": "Medium", "impact_days": 10, "category": "Facility Management", "audit_trail": "Utility audit sheet + conservation implementation log" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-B01", "title": "Project Overhead Caps", "description": "Limit general conditions to % of contract value. Reduce site trailers, temp utilities, and field admin costs immediately.", "effort": "Medium", "impact_days": 7, "category": "Project Control", "audit_trail": "Overhead cap sheet + site cost reduction log" },
+    { "id": "23-B02", "title": "Equipment Lease Renegotiation", "description": "Return underutilized rented equipment. Negotiate rate reductions or payment deferrals with lessors to lower monthly OpEx.", "effort": "High", "impact_days": 14, "category": "Asset Management", "audit_trail": "Equipment return log + lease renegotiation tracker" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-B01", "title": "Idle Oven & Shift Consolidation", "description": "Combine production runs to reduce idle heating time. Cut low-volume shifts and track labor/utility cost per batch.", "effort": "Medium", "impact_days": 10, "category": "Production Efficiency", "audit_trail": "Shift consolidation log + utility cost tracker" },
+    { "id": "3118-B02", "title": "Admin & Delivery Route Optimization", "description": "Consolidate back-office roles and optimize delivery routes to reduce fuel and driver overtime costs.", "effort": "Low", "impact_days": 7, "category": "Logistics Efficiency", "audit_trail": "Route optimization report + fuel cost log" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-B01", "title": "Service Bay Utilization Audit", "description": "Track empty bay hours and technician idle time. Adjust scheduling and cross-train staff to improve labor absorption.", "effort": "Medium", "impact_days": 14, "category": "Labor Efficiency", "audit_trail": "Bay utilization report + scheduling adjustment log" },
+    { "id": "4411-B02", "title": "Fixed Overhead Reduction", "description": "Cut non-essential marketing, pause facility upgrades, and renegotiate supplier terms to lower monthly operating costs.", "effort": "High", "impact_days": 21, "category": "Opex Control", "audit_trail": "Expense freeze memo + supplier renegotiation log" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-B01", "title": "Software-as-a-Service (SaaS) & Cloud Subscription Audit", "description": "Eliminate unused dev tools, staging environments, and redundant licenses. Switch to open-source or lower-tier plans where viable.", "effort": "Low", "impact_days": 7, "category": "Tech Overhead", "audit_trail": "Subscription audit log + cost reduction report" },
+    { "id": "5415-B02", "title": "Meeting & Admin Time Reduction", "description": "Implement strict meeting caps and async communication. Redirect saved hours to billable client work.", "effort": "Medium", "impact_days": 10, "category": "Process Efficiency", "audit_trail": "Meeting audit report + utilization uplift tracker" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-B01", "title": "Labor Scheduling vs Demand Alignment", "description": "Cut staff hours during slow periods. Implement strict overtime caps and track the cost of labor daily.", "effort": "Low", "impact_days": 5, "category": "Workforce Management", "audit_trail": "Labor cost report + schedule adjustment log" },
+    { "id": "7225-B02", "title": "Utility & Waste Cost Control", "description": "Audit energy and water usage. Implement conservation measures and renegotiate waste hauler contracts to lower monthly general & administrative.", "effort": "Medium", "impact_days": 10, "category": "Facility Efficiency", "audit_trail": "Utility audit sheet + cost reduction tracker" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-B01", "title": "Site Overhead & Trailer Cost Reduction", "description": "Consolidate job sites, reduce trailer rentals, and cut temp utilities. Track general conditions % vs contract value.", "effort": "Medium", "impact_days": 7, "category": "Project Control", "audit_trail": "Site cost reduction log + general & administrative variance report" },
+    { "id": "2361-B02", "title": "Superintendent Span Optimization", "description": "Increase superintendent-to-project ratio. Use remote progress tracking to reduce field admin travel and time costs.", "effort": "High", "impact_days": 14, "category": "Labor Efficiency", "audit_trail": "Span analysis sheet + tech adoption report" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-B01", "title": "Staff Hour Optimization", "description": "Align payroll to foot traffic. Reduce idle time, cut overtime, and implement self-checkout to lower the cost of labor.", "effort": "Low", "impact_days": 7, "category": "Workforce Management", "audit_trail": "Payroll optimization report + labor cost tracker" },
+    { "id": "4561-B02", "title": "Marketing & Promo Spend Audit", "description": "Eliminate low-Return on Investment (ROI) campaigns and pause non-essential promotions. Redirect budget to highest-margin products only.", "effort": "Medium", "impact_days": 10, "category": "Marketing Efficiency", "audit_trail": "Campaign Return on Investment (ROI) dashboard + budget reallocation log" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-B01", "title": "Admin Staff Consolidation", "description": "Review back-office headcount vs revenue. Consolidate roles, pause hiring, and implement shared services to lower Selling, General & Admin (SG&A).", "effort": "Medium", "impact_days": 14, "category": "Labor Efficiency", "audit_trail": "Headcount review sheet + role consolidation log" },
+    { "id": "5412-B02", "title": "Software Subscription Audit", "description": "Eliminate redundant tax/prep software licenses. Switch to volume pricing or alternative platforms to reduce tech general & administrative.", "effort": "Low", "impact_days": 7, "category": "Tech Overhead", "audit_trail": "Software audit log + cost reduction report" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-B01", "title": "Departmental Expense Caps", "description": "Implement zero-based budgeting for housekeeping, Food & Beverage (F&B), and admin. Track cost per occupied room and cut non-essential spending.", "effort": "Medium", "impact_days": 14, "category": "Departmental Control", "audit_trail": "Dept expense report + zero-based budget sheet" },
+    { "id": "7211-B02", "title": "Energy & Utility Optimization", "description": "Install smart thermostats, LED lighting, and low-flow fixtures. Monitor utility cost per room and implement conservation protocols.", "effort": "Low", "impact_days": 10, "category": "Facility Efficiency", "audit_trail": "Utility audit sheet + conservation implementation log" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

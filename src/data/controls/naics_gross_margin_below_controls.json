@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when gross margin is below industry benchmark",
+  "focus": "Recover margin through cost of sales reduction, pricing correction, waste control, and mix optimization",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "GM-B01",
+   "title": "cost of sales Variance & Breakdown Audit",
+   "description": "Split cost of sales into direct materials, direct labor, and general & administrative. Flag any category more than 3% above historical or industry baseline. Investigate supplier price hikes, yield loss, or labor inefficiency.",
+   "effort": "Medium",
+   "impact_days": 7,
+   "category": "Cost Analysis",
+   "audit_trail": "cost of sales variance report + root-cause investigation log"
+  },
+  {
+   "id": "GM-B02",
+   "title": "Pricing & Discount Governance",
+   "description": "Audit all active discounts, promotions, and negotiated rates. Eliminate unprofitable price concessions. Implement minimum margin thresholds for sales approvals.",
+   "effort": "Low",
+   "impact_days": 5,
+   "category": "Pricing Control",
+   "audit_trail": "Discount authorization log + price floor policy"
+  },
+  {
+   "id": "GM-B03",
+   "title": "Supplier Renegotiation & Sourcing Review",
+   "description": "Compare top 5 supplier costs against market rates. Request volume discounts, alternative materials, or due date of 60 days terms. Pilot secondary suppliers for critical inputs.",
+   "effort": "High",
+   "impact_days": 21,
+   "category": "Supply Chain",
+   "audit_trail": "Supplier bid comparison + contract amendment records"
+  },
+  {
+   "id": "GM-B04",
+   "title": "Product/Service Mix Optimization",
+   "description": "Rank offerings by how much each product or service is part of total sales. Phase out or repriced low-price items. Shift marketing/sales focus to top 20% high-price products or services.",
+   "effort": "Medium",
+   "impact_days": 14,
+   "category": "Revenue Strategy",
+   "audit_trail": "Margin contribution matrix + product discontinuation log"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-B01", "title": "Material Yield & Scrap Tracking", "description": "Measure input vs. output weight/units daily. Investigate yield drops more than 2%. Implement scrap recovery or vendor return programs.", "effort": "Medium", "impact_days": 10, "category": "Production Efficiency", "audit_trail": "Yield variance log + scrap recovery receipts" },
+    { "id": "31-B02", "title": "Machine Setup & Changeover Reduction", "description": "Track setup times. Implement SMED (Single-Minute Exchange of Die) principles to reduce non-value labor and material waste during changeovers.", "effort": "High", "impact_days": 18, "category": "Operational Efficiency", "audit_trail": "Changeover time tracker + SMED implementation report" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-B01", "title": "Shrinkage & Markdown Control", "description": "Audit inventory shrinkage weekly. Limit manager markdown authority. Track sell-through rates and clear slow movers before reduction of sales.", "effort": "Low", "impact_days": 7, "category": "Inventory Control", "audit_trail": "Shrinkage variance sheet + markdown approval log" },
+    { "id": "44-B02", "title": "Vendor Rebate & Allowance Capture", "description": "Track all vendor promotional allowances, cooperative advertising, and volume rebates. Ensure 100% collection and proper cost of sales offset.", "effort": "Medium", "impact_days": 12, "category": "Cost Recovery", "audit_trail": "Rebate tracking ledger + vendor correspondence" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-B01", "title": "Scope Creep & Change Order Enforcement", "description": "Require signed change orders for any out-of-scope work. Track unbilled hours vs. project sales. Halt work until additional fees are approved.", "effort": "Low", "impact_days": 5, "category": "Service Delivery", "audit_trail": "Change order repository + unbilled Work-In-Progress (WIP) report" },
+    { "id": "54-B02", "title": "Utilization & Delivery Cost Review", "description": "Compare actual hours spent vs. estimated. Identify low-utilization staff or inefficient processes. Automate or offshore repetitive tasks.", "effort": "Medium", "impact_days": 14, "category": "Labor Efficiency", "audit_trail": "Utilization dashboard + process automation log" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-B01", "title": "Portion Control & Recipe Standardization", "description": "Weigh/key ingredients per dish. Track variance vs. standard recipe. Retrain staff on portioning. Audit waste logs daily.", "effort": "Low", "impact_days": 5, "category": "Food Cost Control", "audit_trail": "Recipe standardization sheet + daily waste log" },
+    { "id": "72-B02", "title": "Menu Engineering & Price Adjustment", "description": "Classify menu items by margin & popularity. Increase prices on high-demand/low-price items. Remove or rework consistently unprofitable dishes.", "effort": "Medium", "impact_days": 10, "category": "Pricing Strategy", "audit_trail": "Menu engineering matrix + price change log" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-B01", "title": "Job Costing & Variance Analysis", "description": "Review job costs weekly vs. estimate. Identify overruns in labor or materials immediately. Correct course before project completion.", "effort": "Medium", "impact_days": 7, "category": "Project Control", "audit_trail": "Job cost report + variance explanation log" },
+    { "id": "23-B02", "title": "Subcontractor Bid Review", "description": "Re-bid open packages if current subcontractors are over budget. Negotiate lump-sum fixes to cap exposure.", "effort": "High", "impact_days": 14, "category": "Procurement", "audit_trail": "Bid comparison sheet + subcontractor negotiation log" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-B01", "title": "Flour & Input Cost Hedging", "description": "Lock in grain/flour prices during low cycles. Track commodity index vs. actual cost of sales weekly.", "effort": "Medium", "impact_days": 14, "category": "Cost Management", "audit_trail": "Commodity hedge log + cost of sales vs index report" },
+    { "id": "3118-B02", "title": "Waste & Spoilage Reduction", "description": "Track daily spoilage of perishables. Adjust production schedules to match demand more closely.", "effort": "Low", "impact_days": 5, "category": "Waste Control", "audit_trail": "Spoilage log + production adjustment sheet" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-B01", "title": "Finance & Insurance (F&I) & Aftermarket Margin Tracking", "description": "Monitor finance, insurance, and service department margins separately. Push the percentage of customers who buy an additional product or service along with a main purchase (attachment rate)s for high-price add-ons.", "effort": "Low", "impact_days": 7, "category": "Revenue Mix", "audit_trail": "Finance & Insurance (F&I) penetration report + service department margin sheet" },
+    { "id": "4411-B02", "title": "Used Car Acquisition Cost Control", "description": "Tighten appraisal standards for trade-ins. Aveoid overpaying for used products that reduces front-end sales.", "effort": "Medium", "impact_days": 10, "category": "Inventory Buying", "audit_trail": "Appraisal audit log + acquisition cost report" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-B01", "title": "License & Cloud Cost Reallocation", "description": "Audit software licenses and cloud infrastructure. Eliminate unused seats. Switch to reserved instances or open-source alternatives where viable.", "effort": "Medium", "impact_days": 10, "category": "Direct Cost Control", "audit_trail": "License utilization report + cloud cost optimization log" },
+    { "id": "5415-B02", "title": "Scope Creep Prevention", "description": "Enforce strict change order processes. Bill for all out-of-scope requests immediately.", "effort": "Low", "impact_days": 5, "category": "Service Delivery", "audit_trail": "Change order log + unbilled Work-In-Progress (WIP) report" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-B01", "title": "Prep Waste & Inventory Par Alignment", "description": "Track prep-to-waste ratio. Adjust par levels based on daypart demand. Implement First-In-First-Out (FIFO) strictly to know which products you sold and how much those products cost and log spoilage by category.", "effort": "Low", "impact_days": 5, "category": "Food Cost Control", "audit_trail": "Prep waste tracker + par level adjustment log" },
+    { "id": "7225-B02", "title": "Supplier Price Audit", "description": "Audit weekly invoices against contracted prices. Dispute discrepancies and renegotiate with high-cost vendors.", "effort": "Medium", "impact_days": 7, "category": "Procurement", "audit_trail": "Invoice audit log + vendor dispute tracker" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-B01", "title": "Material Waste & Theft Prevention", "description": "Secure job sites. Track material deliveries vs. usage. Investigate significant variances.", "effort": "Low", "impact_days": 7, "category": "Asset Protection", "audit_trail": "Material usage log + site security audit" },
+    { "id": "2361-B02", "title": "Labor Efficiency Review", "description": "Track crew productivity daily. Replace underperforming subcontractors or crews. Provide targeted training.", "effort": "Medium", "impact_days": 14, "category": "Labor Management", "audit_trail": "Crew productivity report + sub performance review" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-B01", "title": "Shrinkage & Expiration Control", "description": "Audit expired goods weekly. Tighten security on high-theft items. Track shrinkage by category.", "effort": "Low", "impact_days": 7, "category": "Inventory Control", "audit_trail": "Shrinkage report + expiration log" },
+    { "id": "4561-B02", "title": "Promotion Return on Investment (ROI) Analysis", "description": "Evaluate effectiveness of discounts. Stop promotions that don't drive incremental volume or sales.", "effort": "Medium", "impact_days": 10, "category": "Marketing Control", "audit_trail": "Promotion Return on Investment (ROI) report + discount authorization log" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-B01", "title": "Realization Rate Improvement", "description": "Track billable vs. collected hours. Write off uncollectible amounts quickly. Improve billing accuracy.", "effort": "Medium", "impact_days": 14, "category": "Revenue Cycle", "audit_trail": "Realization rate report + write-off log" },
+    { "id": "5412-B02", "title": "Staff Utilization Audit", "description": "Identify non-billable time leaks. Redirect staff to billable work or automate admin tasks.", "effort": "Medium", "impact_days": 10, "category": "Labor Efficiency", "audit_trail": "Utilization report + automation plan" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-B01", "title": "OTA Commission Reduction", "description": "Shift bookings to direct channels. Offer incentives for direct bookings to save on commissions.", "effort": "Medium", "impact_days": 14, "category": "Channel Strategy", "audit_trail": "Channel mix report + commission savings log" },
+    { "id": "7211-B02", "title": "Energy & Utility Cost Control", "description": "Audit energy usage. Implement smart thermostats and LED lighting. Reduce utility cost of sales.", "effort": "Low", "impact_days": 21, "category": "Opex Control", "audit_trail": "Utility bill audit + savings tracker" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}

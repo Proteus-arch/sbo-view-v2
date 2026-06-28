@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "description": "Checks and balances triggered when days to get paid after a sale is above industry benchmark",
+  "focus": "Accelerate cash conversion, tighten credit policies, reduce long-term unpaid sales invoices, and improve collection processes",
+  "last_updated": "2026-05-25"
+ },
+ "universal_controls": [
+  {
+   "id": "DSO-A01",
+   "title": "AR Aging & Automated Collection Push",
+   "description": "Flag invoices more than 30 days overdue. Implement automated reminder sequences, escalate to collections at 45 days, and require payment plans for chronic late-payers.",
+   "effort": "Low",
+   "impact_days": 5,
+   "category": "Cash Acceleration",
+   "audit_trail": "long-term unpaid sales invoices report + collection activity log"
+  },
+  {
+   "id": "DSO-A02",
+   "title": "Credit Policy Tightening",
+   "description": "Reduce standard terms from net-30 to net-15. Require upfront deposits or credit card holds for new clients. Run refreshed credit checks on top 10 unpaid sales invoices.",
+   "effort": "Medium",
+   "impact_days": 7,
+   "category": "Risk Management",
+   "audit_trail": "Credit policy amendment + approval threshold log"
+  },
+  {
+   "id": "DSO-A03",
+   "title": "Early-Pay Discount Incentives",
+   "description": "Offer 2% discount if paid within 10 days and a due date of 30 days, or a discount of 1.5% if paid within 7 days and a due date of 15 days, to accelerate inflows. Track discount take-rate vs. cost of capital to ensure net positive cash impact.",
+   "effort": "Low",
+   "impact_days": 5,
+   "category": "Pricing Control",
+   "audit_trail": "Discount capture ledger + cash conversion tracker"
+  },
+  {
+   "id": "DSO-A04",
+   "title": "Factoring & Receivables Financing Review",
+   "description": "If spendable cash is constrained, evaluate non-recourse factoring for invoices  more than 60 days. Compare factor fees to revolver interest to select optimal path.",
+   "effort": "High",
+   "impact_days": 10,
+   "category": "Liquidity Management",
+   "audit_trail": "Factor rate comparison + cash advance agreement"
+  }
+ ],
+ "sector_controls": {
+  "31": {
+   "sector": "Manufacturing",
+   "controls": [
+    { "id": "31-A01", "title": "Milestone Billing Enforcement", "description": "Require progress payments at fabrication, Quality Assurance (QA), and delivery stages. Halt shipments until prior milestones are settled.", "effort": "Medium", "impact_days": 7, "category": "Billing Policy", "audit_trail": "Milestone invoice log + shipment hold tracker" },
+    { "id": "31-A02", "title": "Retention & Warranty Hold Tracking", "description": "Monitor retention receivables separately. Negotiate partial release upon provisional acceptance to free trapped cash.", "effort": "Medium", "impact_days": 14, "category": "Contract Finance", "audit_trail": "Retention schedule + release negotiation log" }
+   ]
+  },
+  "44": {
+   "sector": "Retail Trade",
+   "controls": [
+    { "id": "44-A01", "title": "business-to-business (B2B) Credit Limit Reduction", "description": "Lower credit limits for wholesale or commercial accounts showing payment delays. Shift to Cash-on-Delivery (COD) or prepaid terms until unpaid sales normalizes.", "effort": "Low", "impact_days": 5, "category": "Credit Management", "audit_trail": "Credit limit amendment + terms change notice" },
+    { "id": "44-A02", "title": "Store-Level unpaid sales Audit", "description": "Reconcile all commercial invoices, vendor returns, and co-op allowances. Write off uncollectible balances and tighten approval workflows.", "effort": "Medium", "impact_days": 10, "category": "Reconciliation", "audit_trail": "AR reconciliation sheet + write-off authorization log" }
+   ]
+  },
+  "54": {
+   "sector": "Professional Services",
+   "controls": [
+    { "id": "54-A01", "title": "Upfront Retainer Enforcement", "description": "Require 30-50% upfront deposits for new engagements. Tie billing to sprint completion rather than final delivery to accelerate inflows.", "effort": "Low", "impact_days": 5, "category": "Billing Policy", "audit_trail": "Contract amendment tracker + deposit collection log" },
+    { "id": "54-A02", "title": "Scope-to-Payment Alignment", "description": "Halt work on out-of-scope requests until change orders are signed and billed. Track unbilled Work-In-Progress (WIP) weekly to prevent margin leakage.", "effort": "Medium", "impact_days": 7, "category": "Service Delivery", "audit_trail": "Change order repository + unbilled Work-In-Progress (WIP) report" }
+   ]
+  },
+  "72": {
+   "sector": "Hospitality & Food Services",
+   "controls": [
+    { "id": "72-A01", "title": "Corporate Account Prepayment Policy", "description": "Require corporate clients to prepay or provide credit card guarantees for group bookings, catering, or extended stays.", "effort": "Low", "impact_days": 5, "category": "Cash Generation", "audit_trail": "Corporate contract terms + prepayment tracker" },
+    { "id": "72-A02", "title": "Daily Reconciliation & Chargeback Prevention", "description": "Reconcile Point-of-Sale systems (POS), Online Travel Agency (OTA), and merchant deposits daily. Dispute chargebacks within 24 hours to preserve cash and reduce unpaid sales drag.", "effort": "Low", "impact_days": 3, "category": "Revenue Assurance", "audit_trail": "Daily reconciliation log + dispute resolution tracker" }
+   ]
+  },
+  "23": {
+   "sector": "Construction",
+   "controls": [
+    { "id": "23-A01", "title": "AIA Draw Request Acceleration", "description": "Submit G702/G703 progress billing immediately upon milestone completion. Chase architect/lender approvals aggressively to compress payment cycles.", "effort": "Medium", "impact_days": 7, "category": "Cash Acceleration", "audit_trail": "Draw request log + approval tracking sheet" },
+    { "id": "23-A02", "title": "Lien Rights & Notice Enforcement", "description": "Serve preliminary notices on all projects. File mechanics liens promptly on unpaid balances to secure payment priority.", "effort": "High", "impact_days": 14, "category": "Legal & Collections", "audit_trail": "Notice service log + lien filing registry" }
+   ]
+  }
+ },
+ "naics_4digit_overrides": {
+  "3118": {
+   "title": "Bakeries and Tortilla Manufacturing",
+   "controls": [
+    { "id": "3118-A01", "title": "Wholesale Account Prepay Enforcement", "description": "Require grocery/restaurant clients to switch to Cash-on-Delivery (COD) or prepaid terms. Track route collection efficiency and flag chronic late accounts.", "effort": "Low", "impact_days": 5, "category": "Credit Management", "audit_trail": "Terms change log + route collection report" },
+    { "id": "3118-A02", "title": "Daily Route Settlement & Cash Handling", "description": "Mandate daily driver settlement for cash/check invoices. Reconcile against route sheets to prevent unpaid sales buildup from field sales.", "effort": "Low", "impact_days": 3, "category": "Revenue Assurance", "audit_trail": "Driver settlement log + variance investigation sheet" }
+   ]
+  },
+  "4411": {
+   "title": "Automobile Dealers",
+   "controls": [
+    { "id": "4411-A01", "title": "Finance & Insurance (F&I) Contract Funding Acceleration", "description": "Push lenders to fund finance contracts within 24 hours. Track 'hold' days and escalate delayed funding to protect cash flow.", "effort": "Low", "impact_days": 5, "category": "Lender Relations", "audit_trail": "Contract funding log + hold day tracker" },
+    { "id": "4411-A02", "title": "Service Department unpaid sales Audit", "description": "Audit fleet, warranty, and insurance unpaid sales separately. Submit claims within 48 hours and follow up on unpaid repairs weekly.", "effort": "Medium", "impact_days": 7, "category": "Reconciliation", "audit_trail": "Service long-term unpaid sales invoices + claim submission tracker" }
+   ]
+  },
+  "5415": {
+   "title": "Computer Systems Design",
+   "controls": [
+    { "id": "5415-A01", "title": "Sprint Milestone Billing & Auto-Charge", "description": "Bill upon sprint completion with automated credit card charging. Reduce manual invoicing lag and enforce terms for a due date of 15 days.", "effort": "Low", "impact_days": 5, "category": "Billing Policy", "audit_trail": "Sprint billing log + auto-charge success rate" },
+    { "id": "5415-A02", "title": "Cloud Consumption Invoicing Alignment", "description": "Pass-through cloud costs monthly with immediate invoice generation. Prevent reduction of sales from delayed client reimbursement.", "effort": "Medium", "impact_days": 7, "category": "Cost Recovery", "audit_trail": "Cloud usage report + client reimbursement tracker" }
+   ]
+  },
+  "7225": {
+   "title": "Restaurants & Eating Places",
+   "controls": [
+    { "id": "7225-A01", "title": "Catering & Event Deposit Policy", "description": "Require 50% deposit for all catering/event bookings. Balance due 7 days prior to event to eliminate post-service unpaid sales risk.", "effort": "Low", "impact_days": 5, "category": "Cash Generation", "audit_trail": "Event contract log + deposit compliance tracker" },
+    { "id": "7225-A02", "title": "Corporate Tab Settlement Rules", "description": "Limit corporate tabs to pre-approved accounts with net-7 terms. Require purchase order (PO) numbers and settle invoices weekly via digital payments (ACH - automatic clearing house).", "effort": "Low", "impact_days": 7, "category": "Credit Management", "audit_trail": "Corporate account registry + weekly settlement log" }
+   ]
+  },
+  "2361": {
+   "title": "Residential Building Construction",
+   "controls": [
+    { "id": "2361-A01", "title": "Change Order Immediate Billing", "description": "Bill change orders within 24 hours of approval. Do not proceed with work until client signs and submits payment.", "effort": "Low", "impact_days": 5, "category": "Billing Policy", "audit_trail": "Change order log + payment receipt tracker" },
+    { "id": "2361-A02", "title": "Lender Draw Submission Tracking", "description": "Monitor draw request submission-to-funding timeline. Chase inspector/architect sign-offs to prevent cash flow gaps between phases.", "effort": "Medium", "impact_days": 7, "category": "Cash Acceleration", "audit_trail": "Draw timeline sheet + approval chase log" }
+   ]
+  },
+  "4561": {
+   "title": "Health and Personal Care Retailers",
+   "controls": [
+    { "id": "4561-A01", "title": "Insurance Claims Submission Acceleration", "description": "Submit all third-party payer claims within 24 hours of service. Track denial rates and appeal promptly to preserve cash.", "effort": "Low", "impact_days": 5, "category": "Reimbursement", "audit_trail": "Claims submission log + denial/appeal tracker" },
+    { "id": "4561-A02", "title": "Patient Payment Plan Enforcement", "description": "Require credit card on file for payment plans. Auto-charge weekly installments and suspend services after two missed payments.", "effort": "Medium", "impact_days": 7, "category": "Credit Management", "audit_trail": "Payment plan registry + auto-charge log" }
+   ]
+  },
+  "5412": {
+   "title": "Accounting, Tax Preparation, Bookkeeping, and Payroll Services",
+   "controls": [
+    { "id": "5412-A01", "title": "Tax Extension Deposit Policy", "description": "Require 50% deposit before filing extensions. Balance due upon return submission. No work without upfront commitment.", "effort": "Low", "impact_days": 5, "category": "Billing Policy", "audit_trail": "Extension deposit log + balance collection tracker" },
+    { "id": "5412-A02", "title": "Monthly Retainer Auto-Billing", "description": "Switch all bookkeeping/payroll clients to automated monthly billing on the 1st. Eliminate manual invoicing lag and late fees.", "effort": "Low", "impact_days": 3, "category": "Revenue Assurance", "audit_trail": "Auto-bill configuration + collection success rate" }
+   ]
+  },
+  "7211": {
+   "title": "Traveler Accommodation",
+   "controls": [
+    { "id": "7211-A01", "title": "Group Block Prepayment Requirement", "description": "Require full prepayment for group bookings  more than 10 rooms. Shift risk from post-stay invoicing to upfront cash collection.", "effort": "Low", "impact_days": 5, "category": "Cash Generation", "audit_trail": "Group contract log + prepayment compliance tracker" },
+    { "id": "7211-A02", "title": "OTA Commission vs Direct Booking Optimization", "description": "Push direct bookings via website discounts to avoid Online Travel Agency (OTA) net-30 payment cycles. Track commission lag vs. direct cash inflow.", "effort": "Medium", "impact_days": 10, "category": "Channel Strategy", "audit_trail": "Channel mix report + cash conversion comparison" }
+   ]
+  }
+ },
+ "complete_naics_index": {
+  "3111": "31", "3112": "31", "3118": "31", "3119": "31",
+  "3211": "32", "3221": "32", "3251": "32", "3261": "32",
+  "3311": "33", "3321": "33", "3331": "33", "3341": "33",
+  "4411": "44", "4441": "44", "4451": "44", "4481": "44",
+  "4551": "45", "4561": "45", "4571": "45", "4581": "45",
+  "5411": "54", "5412": "54", "5413": "54", "5415": "54",
+  "6211": "62", "6214": "62", "6215": "62", "6216": "62",
+  "7211": "72", "7212": "72", "7223": "72", "7225": "72",
+  "2361": "23", "2362": "23", "2371": "23", "2381": "23"
+ }
+}
