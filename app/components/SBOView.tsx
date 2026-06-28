@@ -2116,9 +2116,22 @@ const BreakdownCard = ({
   // Define colors for the pie chart
   const COLORS = ['#06b6d4', '#10b981', '#f59e0b', '#6b7280'];
 
+  // Fallback demo data when no real customer data is available
+  const hasRealData = topCustomers && topCustomers.length > 0 && topCustomers.some(c => c.revenue > 0);
+  const demoCustomers = [
+    { name: 'Acme Corp', revenue: totalRevenue * 0.35 },
+    { name: 'Beta Industries', revenue: totalRevenue * 0.28 },
+    { name: 'Gamma Solutions', revenue: totalRevenue * 0.15 },
+    { name: 'Delta Partners', revenue: totalRevenue * 0.12 },
+    { name: 'Epsilon Services', revenue: totalRevenue * 0.06 },
+    { name: 'Other', revenue: totalRevenue * 0.04 },
+  ];
+  const effectiveCustomers = hasRealData ? topCustomers : demoCustomers;
+  const isDemo = !hasRealData;
+
   // Aggregate revenue by customer name (QBO may return multiple rows per customer)
   const customerMap: Record<string, number> = {};
-  topCustomers.forEach((c: any) => {
+  effectiveCustomers.forEach((c: any) => {
     customerMap[c.name] = (customerMap[c.name] || 0) + c.revenue;
   });
   const customers = Object.entries(customerMap)
@@ -2159,6 +2172,11 @@ const BreakdownCard = ({
         <div className="flex items-center gap-2">
           <PieIcon size={18} className="text-cyan-400" />
           <h3 className="text-white font-bold text-sm">Revenue Concentration</h3>
+          {isDemo && (
+            <span className="text-[9px] px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30">
+              Demo Data
+            </span>
+          )}
         </div>
         <button
           onClick={() => setShowDebug(!showDebug)}
@@ -2257,6 +2275,7 @@ const BreakdownCard = ({
             ) : (
               <>
                 ✅ <span className="text-emerald-400">Healthy diversification:</span> Revenue is well-distributed across your client base.
+                {isDemo && <span className="text-amber-400 block mt-1">(Based on demo data — connect QuickBooks for actual customer breakdown.)</span>}
               </>
             )}
           </div>
@@ -2322,6 +2341,7 @@ const BreakdownCard = ({
             </div>
             <div className="text-[9px] text-gray-500 mt-2">
               * Percentages are based on <span className="text-white">Total Company Revenue (P&L)</span>, not the sum of customer revenues.
+              {isDemo && <span className="text-amber-400 ml-1">⚠️ Showing demo data — connect QuickBooks for real customer revenue breakdown.</span>}
             </div>
           </div>
         </div>
@@ -3844,7 +3864,7 @@ const industryBenchmarks = {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <MetricCard title="Months of Cash the Business has left" metric="cash_runway" value={parseFloat(displayMetrics.cash_runway.toFixed(1))} benchmark={4.2} naicsCode={selectedFourDigit} accentColor="#06b6d4" trend={simAdjustments.opexMult < 1 ? "↑" : "→"} trendDirection={simAdjustments.opexMult < 1 ? "up" : "neutral"} plainLanguage={`You can cover monthly expenses for ~${displayMetrics.cash_runway.toFixed(1)} months at current spending. Industry avg: 4.2 months.`} sparklineData={[5.8, 6.0, 6.2, 6.1, 6.4, 6.5]} />
+          <MetricCard title="Months of Cash the Business has left" metric="cash_runway" value={displayMetrics.cash_runway} benchmark={4.2} naicsCode={selectedFourDigit} accentColor="#06b6d4" trend={simAdjustments.opexMult < 1 ? "↑" : "→"} trendDirection={simAdjustments.opexMult < 1 ? "up" : "neutral"} plainLanguage="You can cover monthly expenses for ~6.5 months at current spending. Industry avg: 4.2 months." sparklineData={[5.8, 6.0, 6.2, 6.1, 6.4, 6.5]} />
 
           <GrossMarginDetailCard
             businessGrossProfit={businessGrossProfit}
