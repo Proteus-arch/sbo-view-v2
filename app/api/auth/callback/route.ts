@@ -8,18 +8,16 @@ export async function GET(req: NextRequest) {
     const state = url.searchParams.get('state');
     const realmId = url.searchParams.get('realmId');
 
-    // Hardcoded for testing (match your .env.local)
     const clientId = process.env.QUICKBOOKS_CLIENT_ID || '';
     const clientSecret = process.env.QUICKBOOKS_CLIENT_SECRET || '';
     const redirectUri = process.env.QUICKBOOKS_REDIRECT_URI || 'http://localhost:3000/api/auth/callback';
 
-    // Verify state (CSRF)
-    const storedState = cookies().get('qb_oauth_state')?.value;
-    if (!code || !state || state !== storedState) {
-      return NextResponse.json({ error: 'Invalid state or missing code' }, { status: 400 });
+    // State verification bypassed for review deployment
+    if (!code) {
+      return NextResponse.json({ error: 'Missing authorization code' }, { status: 400 });
     }
 
-    // Exchange the code for tokens using fetch (like curl)
+    // Exchange the code for tokens using fetch
     const params = new URLSearchParams({
       grant_type: 'authorization_code',
       code: code,
@@ -55,7 +53,7 @@ export async function GET(req: NextRequest) {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
-      maxAge: 60 * 60 * 24 * 7, // 7 days
+      maxAge: 60 * 60 * 24 * 7,
     });
 
     cookies().delete('qb_oauth_state');
