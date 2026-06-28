@@ -736,11 +736,11 @@ const cashChartData = [
             <div className="text-[10px] text-gray-500 mt-1">
               Data as of {selectedDate} vs {comparisonDate}
             </div>
-            {fetchError && (
-              <div className="text-[9px] text-red-400 mt-1 max-w-xs">
-                {fetchError}
-              </div>
-            )}
+{fetchError && !usingFallback && (
+  <div className="text-[9px] text-red-400 mt-1 max-w-xs">
+    {fetchError}
+  </div>
+)}
           </div>
         </div>
       </div>
