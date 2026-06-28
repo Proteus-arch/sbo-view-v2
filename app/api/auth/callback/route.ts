@@ -9,9 +9,9 @@ export async function GET(req: NextRequest) {
     const realmId = url.searchParams.get('realmId');
 
     // Hardcoded for testing (match your .env.local)
-    const clientId = 'ABHN8eixlzaqSbXfBQhX933fn4g2wtAwK2KLY7v96AvansO3od';
-    const clientSecret = 'qpX2MzKRCjXCqHUwt01gYwaAYF415Qbj6OKWRxNy';
-    const redirectUri = 'http://localhost:3000/api/auth/callback';
+    const clientId = process.env.QUICKBOOKS_CLIENT_ID || '';
+    const clientSecret = process.env.QUICKBOOKS_CLIENT_SECRET || '';
+    const redirectUri = process.env.QUICKBOOKS_REDIRECT_URI || 'http://localhost:3000/api/auth/callback';
 
     // Verify state (CSRF)
     const storedState = cookies().get('qb_oauth_state')?.value;
