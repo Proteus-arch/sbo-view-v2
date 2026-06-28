@@ -19,7 +19,7 @@ const IRCAlertsPanel: React.FC = () => {
   const [dismissed, setDismissed] = useState<Set<string>>(new Set());
 
   useEffect(() => {
-    fetch('/api/irc/alerts', { credentials: 'include' })
+    fetch('/api/tax-alerts', { credentials: 'include' })
       .then(res => res.json())
       .then(data => {
         setAlerts(data.alerts || []);
