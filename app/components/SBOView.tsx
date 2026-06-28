@@ -3844,7 +3844,7 @@ const industryBenchmarks = {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <MetricCard title="Months of Cash the Business has left" metric="cash_runway" value={displayMetrics.cash_runway} benchmark={4.2} naicsCode={selectedFourDigit} accentColor="#06b6d4" trend={simAdjustments.opexMult < 1 ? "↑" : "→"} trendDirection={simAdjustments.opexMult < 1 ? "up" : "neutral"} plainLanguage="You can cover monthly expenses for ~6.5 months at current spending. Industry avg: 4.2 months." sparklineData={[5.8, 6.0, 6.2, 6.1, 6.4, 6.5]} />
+          <MetricCard title="Months of Cash the Business has left" metric="cash_runway" value={parseFloat(displayMetrics.cash_runway.toFixed(1))} benchmark={4.2} naicsCode={selectedFourDigit} accentColor="#06b6d4" trend={simAdjustments.opexMult < 1 ? "↑" : "→"} trendDirection={simAdjustments.opexMult < 1 ? "up" : "neutral"} plainLanguage={`You can cover monthly expenses for ~${displayMetrics.cash_runway.toFixed(1)} months at current spending. Industry avg: 4.2 months.`} sparklineData={[5.8, 6.0, 6.2, 6.1, 6.4, 6.5]} />
 
           <GrossMarginDetailCard
             businessGrossProfit={businessGrossProfit}
