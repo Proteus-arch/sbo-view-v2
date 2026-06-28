@@ -96,7 +96,10 @@ export default function Home() {
         <div className="flex items-center gap-3 flex-wrap">
           <Activity className="text-emerald-500" size={32} />
           <h1 className="text-3xl font-bold tracking-tight">Cashew</h1>
-          {/* The QuickBooks button appears right here */}
+          {/* Demo Data Badge */}
+          <span className="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full border border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-800">
+            Demo Data
+          </span>
           <QuickBooksConnect />
         </div>
 
@@ -146,4 +149,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}"// deployed" 
+}
