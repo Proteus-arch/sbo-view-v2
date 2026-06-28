@@ -3657,7 +3657,7 @@ useEffect(() => {
 }, [homeOfficeSqFt]);
 
 useEffect(() => {
-  fetch('http://localhost:5001/api/alerts')
+  fetch('/api/tax-alerts')
     .then(res => res.json())
     .then(data => {
       if (data.alerts) {
