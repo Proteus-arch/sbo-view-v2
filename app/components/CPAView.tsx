@@ -756,9 +756,11 @@ const cashChartData = [
           <div>Depreciation: <strong className="text-white">${dep.toLocaleString()}</strong></div>
           <div>Derived OpEx: <strong className="text-emerald-400">${(opex - cogs - dep).toLocaleString()}</strong></div>
         </div>
-        <div className="mt-2 text-gray-500">
-          Raw API Response: {rawResponse ? JSON.stringify(rawResponse, null, 2) : 'Waiting...'}
-        </div>
+{!usingFallback && (
+  <div className="mt-2 text-gray-500">
+    Raw API Response: {rawResponse ? JSON.stringify(rawResponse, null, 2) : 'Waiting...'}
+  </div>
+)}
       </div>
 
       {/* METRICS GRID */}
