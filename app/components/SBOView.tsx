@@ -3495,7 +3495,7 @@ export default function SBOView() {
   useEffect(() => {
     const fetchQuickBooksMetrics = async () => {
       try {
-        const response = await fetch('http://localhost:5001/api/quickbooks/metrics', {
+        const response = await fetch('/api/quickbooks/metrics', {
           credentials: 'include',
         });
         if (response.ok) {
@@ -3509,7 +3509,7 @@ export default function SBOView() {
 let realTopCustomers: { name: string; revenue: number }[] = [];
 let customerIncomeTotal: number | null = null;
 try {
-  const customerIncomeResponse = await fetch('http://localhost:5001/api/quickbooks/reports/CustomerIncome', {
+  const customerIncomeResponse = await fetch('/api/quickbooks/reports/CustomerIncome', {
     credentials: 'include',
   });
   if (customerIncomeResponse.ok) {

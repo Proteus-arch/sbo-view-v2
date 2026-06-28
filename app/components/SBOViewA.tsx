@@ -139,7 +139,7 @@ export default function SBOView() {
   useEffect(() => {
     const fetchAlerts = async () => {
       try {
-        const res = await fetch('http://localhost:5001/api/irc/alerts');
+        const res = await fetch('/api/irc/alerts');
         if (res.ok) {
           const data = await res.json();
           setTaxAlerts(data.alerts || []);
@@ -157,7 +157,7 @@ export default function SBOView() {
         setIsLoading(true);
         setFetchError(null);
         try {
-          const res = await fetch(`http://localhost:5001/api/industry/profile?naics=${naicsCode}&zip=${zipCode}`);
+          const res = await fetch(`/api/industry/profile?naics=${naicsCode}&zip=${zipCode}`);
           if (!res.ok) throw new Error("Upstream industrial data node unreachable.");
           const payload = await res.json();
           setIndustryProfile(payload);

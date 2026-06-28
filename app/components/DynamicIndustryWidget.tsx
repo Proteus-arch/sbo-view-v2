@@ -142,7 +142,7 @@ useEffect(() => {
   
   console.log('[DynamicWidget] Fetch triggered - NAICS:', naics, 'Zip:', zipCode);
   setLoading(true);
-  const url = `http://localhost:5001/api/industry/profile/${naics}?zip_code=${zipCode}`;
+  const url = `/api/industry/profile/${naics}?zip_code=${zipCode}`;
   console.log("[DynamicWidget] Fetching: ", url);
   
   let cancelled = false; // Add cleanup flag
@@ -189,7 +189,7 @@ useEffect(() => {
 
   const fetchSbaStatus = async () => {
     try {
-      const res = await fetch('http://localhost:5001/api/sba/status', { credentials: 'include' });
+      const res = await fetch('/api/sba/status', { credentials: 'include' });
       if (res.ok) {
         const data = await res.json();
         setSbaStatus(data);
@@ -202,7 +202,7 @@ useEffect(() => {
   const fetchSbaDatasetInfo = async () => {
     setSbaDatasetInfo(prev => ({ ...prev, loading: true, error: null }));
     try {
-      const res = await fetch('http://localhost:5001/api/sba/dataset-info', { credentials: 'include' });
+      const res = await fetch('/api/sba/dataset-info', { credentials: 'include' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       if (!data.success) {
@@ -227,7 +227,7 @@ useEffect(() => {
   const handleRefreshSba = async () => {
     setRefreshingSba(true);
     try {
-      const res = await fetch('http://localhost:5001/api/sba/refresh', { credentials: 'include' });
+      const res = await fetch('/api/sba/refresh', { credentials: 'include' });
       const data = await res.json();
       if (data.success) {
         setSbaStatus(data.status);
